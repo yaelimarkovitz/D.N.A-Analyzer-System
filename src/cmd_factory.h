@@ -21,9 +21,8 @@ private:
 };
 
 inline Icommand* CmdFactory::createCommand(const std::string &str) {
-    size_t index = str.find(" ");
-    std::string cmdStr = str.substr(0,index);
-    size_t indexInList = s_mapNameToNum.find(cmdStr)->second;
+
+    size_t indexInList = s_mapNameToNum.find(str)->second;
 
     /*check if this is the first use of this command*/
     if (s_commandList[indexInList]==NULL)
@@ -31,7 +30,6 @@ inline Icommand* CmdFactory::createCommand(const std::string &str) {
         s_commandList[indexInList] = new New();
     }
 
-    s_commandList[indexInList]->setParams(str.substr(index+1,str.size()-index+1));
     return s_commandList[indexInList];
 }
 #endif //UNTITLED_CMDFACTORY_H

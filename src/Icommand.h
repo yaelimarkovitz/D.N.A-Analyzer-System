@@ -6,11 +6,10 @@
 #define UNTITLED_ICOMMAND_H
 
 #include <string>
-
+#include <vector>
 class Icommand{
 public:
-    virtual const std::string& execute()=0;
-    virtual void setParams(std::string str)=0;
+    virtual std::string execute(std::vector<std::string> params)=0;
 };
 
 #endif //UNTITLED_ICOMMAND_H

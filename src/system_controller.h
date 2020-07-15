@@ -6,6 +6,7 @@
 #define DNA_PROJECT_SYSTEM_CONTROLLER_H
 
 #include <iostream>
+#include <vector>
 //#include "Icommand_line.h"
 #include "dna_data_base.h"
 #include "cmd_factory.h"
@@ -26,15 +27,26 @@ inline void SystemController::initSystem() {
 
 inline void SystemController::run() {
     std::string buffer;
+    std::vector<std::string> params;
+    int len=0;
     std::cout<<"<<cmd< ";
     std::getline(std::cin,buffer,'\n');
     while(buffer!="quit"){
-        m_curCmd = CmdFactory::createCommand(buffer);
-        buffer = m_curCmd->execute();
+        for (size_t i = 0; i < buffer.size() ; ++i) {
+            if(buffer[i]==' '){
+                params.push_back(buffer.substr(i-len,len));
+                len=0;
+            }
+            len++;
+        }
+        params.push_back(buffer.substr(buffer.size()-len,len));
+        m_curCmd = CmdFactory::createCommand(params[0]);
+        buffer = m_curCmd->execute(params);
         std::cout<<buffer<<std::endl;
-        std
         std::cout<<"<<cmd< ";
         std::getline(std::cin,buffer,'\n');
+        params.clear();
+        len = 0;
     }
     quitSystem();
 }

@@ -11,21 +11,17 @@
 class New :public Icommand{
 
 public:
-    const std::string& execute();
-    void setParams(std::string str);
+    std::string execute(std::vector<std::string> params);
 
 private:
     DnaInfo* seq;
 };
 
-inline const std::string& New::execute()
+inline std::string New::execute(std::vector<std::string> params)
 {
-    std::cout<<"execute new command"<<std::endl;
+    std::cout<<"the params: "<<params[1]<<" "<<params[2]<<std::endl;
+    return "new execute";
 }
 
-inline void New::setParams(std::string str) {
-    std::cout<<"set new params "<<str<<std::endl;
-
-}
 
 #endif //UNTITLED_NEW_CMD_H
