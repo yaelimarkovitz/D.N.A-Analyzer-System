@@ -5,9 +5,12 @@
 #ifndef UNTITLED_ICOMMAND_H
 #define UNTITLED_ICOMMAND_H
 
-#endif //UNTITLED_ICOMMAND_H
+#include <string>
+
 class Icommand{
 public:
-    virtual void execute()=0;
-    virtual void setParams()=0;
+    virtual const std::string& execute()=0;
+    virtual void setParams(std::string str)=0;
 };
+
+#endif //UNTITLED_ICOMMAND_H

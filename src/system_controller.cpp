@@ -3,3 +3,5 @@
 //
 
 #include "system_controller.h"
+
+Icommand* SystemController::m_curCmd = NULL;

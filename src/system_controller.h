@@ -21,20 +21,25 @@ private:
 };
 inline void SystemController::initSystem() {
     std::cout<<"start system"<<std::endl;
+    run();
 }
 
 inline void SystemController::run() {
     std::string buffer;
     std::cout<<"<<cmd< ";
     std::getline(std::cin,buffer,'\n');
-    while(buffer=="quit"){
-        m_curCmd=CmdFactory::createCommand(buffer);
-        m_curCmd->execute();
+    while(buffer!="quit"){
+        m_curCmd = CmdFactory::createCommand(buffer);
+        buffer = m_curCmd->execute();
+        std::cout<<buffer<<std::endl;
+        std
+        std::cout<<"<<cmd< ";
+        std::getline(std::cin,buffer,'\n');
     }
     quitSystem();
 }
 
 inline void SystemController::quitSystem() {
-    printf("finish system");
+    printf("finish system\n");
 }
 #endif //DNA_PROJECT_SYSTEM_CONTROLLER_H

@@ -15,7 +15,7 @@ public:
 
     static DnaInfo* findById(size_t id) ;//return nullptr case there is no dna with that name
     static DnaInfo* findByName(const std::string& name);//return nullptr case there is no dna with that id
-    static void setNewDna(DnaSequence * d);//TODO check it insert params to this function
+    static void setNewDna(DnaInfo* dna );//TODO check it insert params to this function
 
 private:
 
@@ -49,6 +49,11 @@ inline bool DnaDataBase::isDnaExist(const std::string& name) {
 inline bool DnaDataBase::isDnaExist(size_t id)  {
     std::map<size_t, std::string>::iterator it = idList.find(id);
     return (it!=idList.end()) && (isDnaExist(it->second));
+}
+
+inline void DnaDataBase::setNewDna(DnaInfo *dna) {
+    dnaList[dna->getNmae()] = dna;
+    idList[dna->getId()] = dna->getNmae();
 }
 
 #endif //UNTITLED_DNA_DATA_BASE_H

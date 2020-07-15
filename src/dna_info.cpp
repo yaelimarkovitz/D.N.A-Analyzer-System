@@ -3,3 +3,4 @@
 //
 
 #include "dna_info.h"
+size_t DnaInfo::s_counterId = 0;
