@@ -17,6 +17,7 @@ class SystemController {
 
 public:
     SystemController(IWrither* write , IReader* read);
+    ~SystemController();
     void initSystem();
     void run();
     void quitSystem();
@@ -26,6 +27,10 @@ private:
 };
 
 inline SystemController::SystemController( IWrither *write, IReader *read):m_cmd(new ICommandLine(write,read)) {
+}
+
+inline SystemController::~SystemController() {
+    delete m_cmd;
 }
 
 inline void SystemController::initSystem() {

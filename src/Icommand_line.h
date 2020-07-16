@@ -14,6 +14,7 @@
 class ICommandLine{
 public:
     ICommandLine(IWrither*,IReader*);
+    ~ICommandLine();
     void run();
     std::vector<std::string> parseCommand(const std::string& str);
     std::string executeCmd(std::vector<std::string> params);
@@ -21,10 +22,13 @@ private:
     CommandCollection* m_cmdCollection;
     IWrither* m_writher;
     IReader* m_reader;
-    Icommand* m_curCmd;
+    ICommand* m_curCmd;
 };
 
 inline ICommandLine::ICommandLine( IWrither * write, IReader * read):m_cmdCollection(new CommandCollection()),m_writher(write),m_reader(read),m_curCmd(NULL) {
+}
+inline ICommandLine::~ICommandLine() {
+    delete m_cmdCollection;
 }
 
 inline void ICommandLine::run() {
@@ -44,12 +48,12 @@ inline std::vector<std::string> ICommandLine::parseCommand(const std::string &st
     int len = 0;
     for (size_t i = 0; i < str.size() ; ++i) {
         if(str[i]==' '){
-            params.push_back(str.substr(i-len,len));
+            params.push_back(str.substr(((i-len)==0)? (0):(i-len+1),((i-len)==0)?len:len-1));
             len=0;
         }
         len++;
     }
-    params.push_back(str.substr(str.size()-len,len));
+    params.push_back(str.substr(str.size()-len+1,len-1));
     return params;
 }
 

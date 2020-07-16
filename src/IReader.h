@@ -6,6 +6,7 @@
 #define UNTITLED_IREADER_H
 class IReader{
 public:
+    virtual ~IReader(){};
     virtual std::string read () = 0;
 };
 #endif //UNTITLED_IREADER_H

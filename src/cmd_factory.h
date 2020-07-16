@@ -8,19 +8,19 @@
 #include <string>
 #include <vector>
 #include <map>
-#include "new_cmd.h"
+#include "./commands/new_cmd.h"
 class CmdFactory {
 
 public:
-    static Icommand* createCommand(const std::string& str);
+    static ICommand* createCommand(const std::string& str);
 
 private:
     static const size_t NUM_OF_COMMANDS = 3 ;
-    static std::vector<Icommand*> s_commandList;
+    static std::vector<ICommand*> s_commandList;
     static std::map<std::string, size_t> s_mapNameToNum;
 };
 
-inline Icommand* CmdFactory::createCommand(const std::string &str) {
+inline ICommand* CmdFactory::createCommand(const std::string &str) {
 
     size_t indexInList = s_mapNameToNum.find(str)->second;
 

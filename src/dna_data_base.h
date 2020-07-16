@@ -15,7 +15,9 @@ public:
 
     static DnaInfo* findById(size_t id) ;//return nullptr case there is no dna with that name
     static DnaInfo* findByName(const std::string& name);//return nullptr case there is no dna with that id
-    static void setNewDna(DnaInfo* dna );//TODO check it insert params to this function
+    static void setNewDna(DnaInfo* dna);//TODO check it insert params to this function
+    static std::map<std::string, DnaInfo*> createMap();
+    static std::map<size_t,std::string> createMapn();
 
 private:
 
@@ -56,4 +58,13 @@ inline void DnaDataBase::setNewDna(DnaInfo *dna) {
     idList[dna->getId()] = dna->getNmae();
 }
 
+inline std::map<std::string, DnaInfo*> DnaDataBase::createMap() {
+    std::map<std::string, DnaInfo*> tmp;
+    return tmp;
+}
+
+inline std::map<size_t,std::string> DnaDataBase::createMapn() {
+    std::map<size_t,std::string> tmp;
+    return tmp;
+}
 #endif //UNTITLED_DNA_DATA_BASE_H
