@@ -4,4 +4,4 @@
 
 #include "system_controller.h"
 
-Icommand* SystemController::m_curCmd = NULL;
+//Icommand* SystemController::m_curCmd = NULL;

@@ -6,48 +6,35 @@
 #define DNA_PROJECT_SYSTEM_CONTROLLER_H
 
 #include <iostream>
-#include <vector>
-//#include "Icommand_line.h"
-#include "dna_data_base.h"
-#include "cmd_factory.h"
+
+
+#include "Icommand_line.h"
+#include "command_collection.h"
+#include "IWrither.h"
+#include "IReader.h"
 
 class SystemController {
+
 public:
-    static void initSystem();
-    static void run();
-    static void quitSystem();
+    SystemController(IWrither* write , IReader* read);
+    void initSystem();
+    void run();
+    void quitSystem();
 private:
-    static Icommand * m_curCmd;
-//    ICommandLine * m_cmd;
+
+    ICommandLine * m_cmd;
 };
+
+inline SystemController::SystemController( IWrither *write, IReader *read):m_cmd(new ICommandLine(write,read)) {
+}
+
 inline void SystemController::initSystem() {
     std::cout<<"start system"<<std::endl;
     run();
 }
 
 inline void SystemController::run() {
-    std::string buffer;
-    std::vector<std::string> params;
-    int len=0;
-    std::cout<<"<<cmd< ";
-    std::getline(std::cin,buffer,'\n');
-    while(buffer!="quit"){
-        for (size_t i = 0; i < buffer.size() ; ++i) {
-            if(buffer[i]==' '){
-                params.push_back(buffer.substr(i-len,len));
-                len=0;
-            }
-            len++;
-        }
-        params.push_back(buffer.substr(buffer.size()-len,len));
-        m_curCmd = CmdFactory::createCommand(params[0]);
-        buffer = m_curCmd->execute(params);
-        std::cout<<buffer<<std::endl;
-        std::cout<<"<<cmd< ";
-        std::getline(std::cin,buffer,'\n');
-        params.clear();
-        len = 0;
-    }
+    m_cmd->run();
     quitSystem();
 }
 

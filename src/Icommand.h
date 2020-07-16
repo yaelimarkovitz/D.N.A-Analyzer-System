@@ -9,6 +9,7 @@
 #include <vector>
 class Icommand{
 public:
+    virtual ~Icommand(){};
     virtual std::string execute(std::vector<std::string> params)=0;
 };
 
