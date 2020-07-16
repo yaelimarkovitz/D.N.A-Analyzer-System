@@ -7,7 +7,7 @@
 #include <vector>
 #include <string>
 #include "command_collection.h"
-#include "Icommand.h"
+#include "ICommand.h"
 #include "IWrither.h"
 #include "IReader.h"
 
@@ -38,7 +38,9 @@ inline void ICommandLine::run() {
     while(command!="quit"){
         params = parseCommand(command);
         output = executeCmd(params);
-        m_writher->write(output);
+        if(output!=NULL){
+            m_writher->write(output);
+        }
         command = m_reader->read();
     }
 }

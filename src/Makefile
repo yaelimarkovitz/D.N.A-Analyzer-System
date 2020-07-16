@@ -8,7 +8,7 @@ OBJS=$(SOURCES:.cpp=.o)
 INC_DIR=../include
 CC=g++
 
-CFLAGS= -pedantic -Wall -Werror -Wconversion  -g  $(INC_FLAGS)
+CFLAGS= -pedantic -Wall -Werror  -g  $(INC_FLAGS)
 CXXFLAGS=$(CFLAGS)
 
 LDFLAGS=-g

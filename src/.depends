@@ -1,0 +1,28 @@
+dna_data_base.o: dna_data_base.cpp dna_data_base.h dna_info.h \
+ dna_sequence.h my_exception.h
+console_reader.o: console_reader.cpp console_reader.h IReader.h
+dna_sequence.o: dna_sequence.cpp dna_sequence.h my_exception.h
+command_collection.o: command_collection.cpp command_collection.h \
+ ICommand.h commands/commands.h commands/new_cmd.h commands/../ICommand.h \
+ commands/../dna_info.h commands/../dna_sequence.h \
+ commands/../my_exception.h commands/../dna_data_base.h \
+ commands/../dna_info.h commands/load.h cmd_factory.h commands/new_cmd.h
+console_writher.o: console_writher.cpp console_writher.h IWrither.h
+system_controller.o: system_controller.cpp system_controller.h \
+ Icommand_line.h command_collection.h ICommand.h commands/commands.h \
+ commands/new_cmd.h commands/../ICommand.h commands/../dna_info.h \
+ commands/../dna_sequence.h commands/../my_exception.h \
+ commands/../dna_data_base.h commands/../dna_info.h commands/load.h \
+ cmd_factory.h commands/new_cmd.h IWrither.h IReader.h
+my_exception.o: my_exception.cpp my_exception.h
+dna_info.o: dna_info.cpp dna_info.h dna_sequence.h my_exception.h
+main.o: main.cpp console_reader.h IReader.h console_writher.h IWrither.h \
+ system_controller.h Icommand_line.h command_collection.h ICommand.h \
+ commands/commands.h commands/new_cmd.h commands/../ICommand.h \
+ commands/../dna_info.h commands/../dna_sequence.h \
+ commands/../my_exception.h commands/../dna_data_base.h \
+ commands/../dna_info.h commands/load.h cmd_factory.h commands/new_cmd.h
+cmd_factory.o: cmd_factory.cpp cmd_factory.h commands/new_cmd.h \
+ commands/../ICommand.h commands/../dna_info.h commands/../dna_sequence.h \
+ commands/../my_exception.h commands/../dna_data_base.h \
+ commands/../dna_info.h

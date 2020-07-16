@@ -6,7 +6,7 @@
 #define UNTITLED_COMMAND_COLLECTION_H
 
 #include <map>
-#include "Icommand.h"
+#include "ICommand.h"
 #include "./commands/commands.h"
 #include "cmd_factory.h"
 class CommandCollection {
@@ -20,6 +20,7 @@ private:
 };
 inline CommandCollection::CommandCollection() {
     m_commandList["new"] = new New;
+    m_commandList["load"] = new Load;
 }
 inline CommandCollection::~CommandCollection() {
     for (std::map<std::string,ICommand*>::iterator it = m_commandList.begin(); it != m_commandList.end();it ++) {

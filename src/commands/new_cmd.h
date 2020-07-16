@@ -6,8 +6,7 @@
 #define UNTITLED_NEW_CMD_H
 
 #include <sstream>
-#include <string>
-#include "../Icommand.h"
+#include "../ICommand.h"
 #include "../dna_info.h"
 #include "../dna_data_base.h"
 
@@ -20,6 +19,7 @@ public:
 private:
     DnaInfo* m_seq;
     std::string  generateName();
+    std::string itoa(int num);
 };
 
 inline New::~New() {
@@ -48,20 +48,21 @@ inline std::string New::execute(std::vector<std::string> params)
 }
 
 inline std::string New::generateName() {
-    int flag = 0;
-    int num = 1;
-    std::ostringstream ss ;
-    while (flag == 0){
-        ss << num;
-        std::cout<<"seq"+ss.str()<<std::endl;
-        if(!DnaDataBase::findByName("seq"+ ss.str())){
-            break;
-        }
-        num++;
-        std::ostringstream ss;
+    static size_t number = 0;
+    number++;
+    return ("seq"+itoa(number));
+}
+
+inline std::string New::itoa(int num) {
+    std::string ss = "";
+    while(num){
+        int x = num % 10;
+        num /= 10;
+        char i = '0';
+        i = i + x ;
+        ss = i + ss;
     }
-    ss << num;
-    return ("seq"+ss.str());
+    return ss;
 }
 
 
