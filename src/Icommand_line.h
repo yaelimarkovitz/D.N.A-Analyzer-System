@@ -32,15 +32,18 @@ inline ICommandLine::~ICommandLine() {
 }
 
 inline void ICommandLine::run() {
-    std::string command , output;
+    std::string command ,output;
     std::vector<std::string> params;
     command = m_reader->read();
     while(command!="quit"){
         params = parseCommand(command);
         output = executeCmd(params);
-        if(output!=NULL){
-            m_writher->write(output);
-        }
+        m_writher->write(output);
+//        if(output!=NULL){
+////            std::cout<<output<<std::endl;
+////            m_writher->write(output);
+//        }
+
         command = m_reader->read();
     }
 }

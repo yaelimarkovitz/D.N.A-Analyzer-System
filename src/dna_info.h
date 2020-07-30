@@ -30,7 +30,6 @@ private:
 };
 
 inline DnaInfo::DnaInfo(DnaSequence dna,  const std::string & name):m_dna(dna),m_id(generateId()),m_name(name),m_st(E_NEW) {
-
 }
 
 inline size_t DnaInfo::getId() const {

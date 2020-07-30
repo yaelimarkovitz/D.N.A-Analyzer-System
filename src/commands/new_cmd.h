@@ -32,17 +32,18 @@ inline std::string New::execute(std::vector<std::string> params)
     if(numOfParams>3 || numOfParams<2){
         return "no valid input";
     }
-    if(m_seq!=NULL){
-        delete m_seq;
-    }
+//    if(m_seq!=NULL){
+//        delete m_seq;
+//    }
     if(params.size()==3){
+
         m_seq = new DnaInfo(params[1],params[2].substr(1,params[2].size()-1));
     }
     else{
         std::string name = generateName();
         m_seq = new DnaInfo(params[1],name);
     }
-//    DnaDataBase::setNewDna(m_seq);
+    DnaDataBase::setNewDna(m_seq);
     return m_seq->getInfo();
 
 }

@@ -10,7 +10,7 @@
 
 class ConsoleWrither: public IWrither {
 public:
-    void write(const std::string&);
+    void write(const std::string &);
 };
 
 inline void ConsoleWrither::write(const std::string & output) {

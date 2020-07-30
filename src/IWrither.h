@@ -7,6 +7,6 @@
 class IWrither{
 public:
     virtual ~IWrither(){};
-    virtual void write (const std::string&) = 0;
+    virtual void write (const std::string &) = 0;
 };
 #endif //UNTITLED_IWRITHER_H
