@@ -8,10 +8,11 @@
 #include <string>
 #include <vector>
 
-class ICommand{
-public:
+struct ICommand{
+
     virtual ~ICommand(){};
     virtual std::string execute(std::vector<std::string> params)=0;
+
 };
 
 #endif //UNTITLED_ICOMMAND_H

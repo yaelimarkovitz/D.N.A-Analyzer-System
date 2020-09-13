@@ -8,12 +8,14 @@
 #include <iostream>
 #include "IWrither.h"
 
-class ConsoleWrither: public IWrither {
+class ConsoleWriter: public IWriter {
+
 public:
     void write(const std::string &);
 };
 
-inline void ConsoleWrither::write(const std::string & output) {
+inline void ConsoleWriter::write(const std::string & output)
+{
     std::cout<< output<<std::endl;
 }
 

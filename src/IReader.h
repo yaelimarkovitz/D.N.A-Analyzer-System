@@ -4,8 +4,9 @@
 
 #ifndef UNTITLED_IREADER_H
 #define UNTITLED_IREADER_H
-class IReader{
-public:
+
+struct IReader{
+
     virtual ~IReader(){};
     virtual std::string read () = 0;
 };

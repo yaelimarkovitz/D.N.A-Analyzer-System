@@ -8,42 +8,49 @@
 #include <iostream>
 
 
-#include "Icommand_line.h"
+#include "../view/Icommand_line.h"
 #include "command_collection.h"
-#include "IWrither.h"
-#include "IReader.h"
+#include "../IWrither.h"
+#include "../IReader.h"
 
 class SystemController {
 
 public:
-    SystemController(IWrither* write , IReader* read);
+
+    SystemController(IWriter* write , IReader* read);
     ~SystemController();
+
     void initSystem();
     void run();
     void quitSystem();
+
 private:
 
     ICommandLine * m_cmd;
 };
 
-inline SystemController::SystemController( IWrither *write, IReader *read):m_cmd(new ICommandLine(write,read)) {
-}
+inline SystemController::SystemController( IWriter *write, IReader *read):m_cmd(new ICommandLine(write,read))
+{}
 
-inline SystemController::~SystemController() {
+inline SystemController::~SystemController()
+{
     delete m_cmd;
 }
 
-inline void SystemController::initSystem() {
+inline void SystemController::initSystem()
+{
     std::cout<<"start system"<<std::endl;
     run();
 }
 
-inline void SystemController::run() {
+inline void SystemController::run()
+{
     m_cmd->run();
     quitSystem();
 }
 
-inline void SystemController::quitSystem() {
+inline void SystemController::quitSystem()
+{
     printf("finish system\n");
 }
 #endif //DNA_PROJECT_SYSTEM_CONTROLLER_H

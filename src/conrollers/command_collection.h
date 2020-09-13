@@ -7,9 +7,10 @@
 
 #include <map>
 #include "ICommand.h"
-#include "./commands/commands.h"
-#include "cmd_factory.h"
+#include "../commands_module/commands.h"
+
 class CommandCollection {
+
 public:
     CommandCollection();
     ~CommandCollection();
@@ -18,19 +19,29 @@ public:
 private:
     std::map<std::string,ICommand*> m_commandList;
 };
-inline CommandCollection::CommandCollection() {
+
+inline CommandCollection::CommandCollection()
+{
     m_commandList["new"] = new New;
     m_commandList["load"] = new Load;
+    m_commandList["save"] = new Save;
 }
-inline CommandCollection::~CommandCollection() {
-    for (std::map<std::string,ICommand*>::iterator it = m_commandList.begin(); it != m_commandList.end();it ++) {
+
+inline CommandCollection::~CommandCollection()
+{
+    for (std::map<std::string,ICommand*>::iterator it = m_commandList.begin(); it != m_commandList.end();it ++)
+    {
         delete it->second;
     }
 }
-inline ICommand* CommandCollection::getCmd(const std::string &name){
-    if(m_commandList.find(name)==m_commandList.end()){
+
+inline ICommand* CommandCollection::getCmd(const std::string &name)
+{
+    if(m_commandList.find(name)==m_commandList.end())
+    {
         return NULL;
     }
+
     return m_commandList[name];
 }
 

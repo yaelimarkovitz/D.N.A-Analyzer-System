@@ -8,11 +8,13 @@
 #include <iostream>
 #include "IReader.h"
 class ConsoleReader :public IReader{
+
 public:
     std::string read();
 };
 
 inline std::string ConsoleReader::read() {
+
     std::cout<<"cmd>>"<<std::endl;
     std::string input;
     std::getline(std::cin,input,'\n');

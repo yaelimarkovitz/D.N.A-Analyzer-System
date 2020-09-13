@@ -142,11 +142,7 @@ std::vector<int> DnaSequence::findConsensusSequences() const {
     }
     return indexes;
 }
-int DnaSequence::output(const char *name_file) {
-    std::ifstream obj_file;
-    DnaSequence d;
-    obj_file.open(name_file,std::ios::in);
-    obj_file.read((char*)&d, sizeof(d));
-    std::cout<<d.m_length_dna<<std::endl;
-    return 0;
+void DnaSequence::output(IWriter* writer) const
+{
+   writer->write("ATGTGTGTGTGT");
 }

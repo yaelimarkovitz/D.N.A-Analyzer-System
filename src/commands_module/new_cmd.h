@@ -6,35 +6,39 @@
 #define UNTITLED_NEW_CMD_H
 
 #include <sstream>
-#include "../ICommand.h"
-#include "../dna_info.h"
-#include "../dna_data_base.h"
+#include "../conrollers/ICommand.h"
+#include "../dna_module/dna_info.h"
+#include "../dna_module/dna_data_base.h"
 
 class New :public ICommand{
 
 public:
+
     ~New();
-    std::string execute(std::vector<std::string> params);
+    /*virtual*/std::string execute(std::vector<std::string> params);
 
 private:
-    DnaInfo* m_seq;
+
+    DnaInfo*            m_seq;
+    static const int    s_numOfParams = 2;
+
     std::string  generateName();
     std::string itoa(int num);
 };
 
-inline New::~New() {
+inline New::~New()
+{
     delete m_seq;
 }
 
 inline std::string New::execute(std::vector<std::string> params)
 {
-    size_t numOfParams = params.size();
-    if(numOfParams>3 || numOfParams<2){
-        return "no valid input";
-    }
-//    if(m_seq!=NULL){
-//        delete m_seq;
-//    }
+    if  (params.size() < s_numOfParams)
+        throw std::runtime_error("not enogh params");
+
+    if(m_seq!=NULL)
+        delete m_seq;
+
     if(params.size()==3){
 
         m_seq = new DnaInfo(params[1],params[2].substr(1,params[2].size()-1));
@@ -48,15 +52,18 @@ inline std::string New::execute(std::vector<std::string> params)
 
 }
 
-inline std::string New::generateName() {
+inline std::string New::generateName()
+{
     static size_t number = 0;
     number++;
     return ("seq"+itoa(number));
 }
 
-inline std::string New::itoa(int num) {
+inline std::string New::itoa(int num)
+{
     std::string ss = "";
-    while(num){
+    while(num)
+    {
         int x = num % 10;
         num /= 10;
         char i = '0';
