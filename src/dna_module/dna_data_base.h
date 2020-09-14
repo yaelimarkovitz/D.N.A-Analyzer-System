@@ -8,6 +8,7 @@
 #include <string>
 #include <map>
 #include "dna_info.h"
+#include "../SharedPointer.h"
 
 class DnaDataBase{
 

@@ -1,0 +1,70 @@
+main.o: main.cpp console_reader.h IReader.h console_writher.h IWrither.h \
+ conrollers/system_controller.h conrollers/../view/Icommand_line.h \
+ conrollers/../view/../conrollers/command_collection.h \
+ conrollers/../view/../conrollers/ICommand.h \
+ conrollers/../view/../conrollers/../commands_module/name_genaration.h \
+ conrollers/../view/../conrollers/../commands_module/commands.h \
+ conrollers/../view/../conrollers/../commands_module/new_cmd.h \
+ conrollers/../view/../conrollers/../commands_module/../conrollers/ICommand.h \
+ conrollers/../view/../conrollers/../commands_module/../dna_module/dna_info.h \
+ conrollers/../view/../conrollers/../commands_module/../dna_module/dna_sequence.h \
+ conrollers/../view/../conrollers/../commands_module/../dna_module/my_exception.h \
+ conrollers/../view/../conrollers/../commands_module/../dna_module/../IReader.h \
+ conrollers/../view/../conrollers/../commands_module/../dna_module/../IWrither.h \
+ conrollers/../view/../conrollers/../commands_module/../dna_module/dna_data_base.h \
+ conrollers/../view/../conrollers/../commands_module/../dna_module/dna_info.h \
+ conrollers/../view/../conrollers/../commands_module/load.h \
+ conrollers/../view/../conrollers/../commands_module/../file_reader.h \
+ conrollers/../view/../conrollers/../commands_module/../IReader.h \
+ conrollers/../view/../conrollers/../commands_module/save.h \
+ conrollers/../view/../conrollers/../commands_module/../file_writer.h \
+ conrollers/../view/../conrollers/../commands_module/../IWrither.h \
+ conrollers/../view/../conrollers/../commands_module/slice.h \
+ conrollers/../view/../conrollers/ICommand.h \
+ conrollers/../view/../IWrither.h conrollers/../view/../IReader.h \
+ conrollers/../view/../SharedPointer.h conrollers/command_collection.h \
+ conrollers/../IWrither.h conrollers/../IReader.h
+dna_data_base.o: dna_module/dna_data_base.cpp dna_module/dna_data_base.h \
+ dna_module/dna_info.h dna_module/dna_sequence.h \
+ dna_module/my_exception.h dna_module/../IReader.h \
+ dna_module/../IWrither.h
+dna_sequence.o: dna_module/dna_sequence.cpp dna_module/dna_sequence.h \
+ dna_module/my_exception.h dna_module/../IReader.h \
+ dna_module/../IWrither.h
+dna_info.o: dna_module/dna_info.cpp dna_module/dna_info.h \
+ dna_module/dna_sequence.h dna_module/my_exception.h \
+ dna_module/../IReader.h dna_module/../IWrither.h
+new_cmd.o: commands_module/new_cmd.cpp commands_module/new_cmd.h \
+ commands_module/../conrollers/ICommand.h \
+ commands_module/../conrollers/../commands_module/name_genaration.h \
+ commands_module/../dna_module/dna_info.h \
+ commands_module/../dna_module/dna_sequence.h \
+ commands_module/../dna_module/my_exception.h \
+ commands_module/../dna_module/../IReader.h \
+ commands_module/../dna_module/../IWrither.h \
+ commands_module/../dna_module/dna_data_base.h \
+ commands_module/../dna_module/dna_info.h
+dup.o: commands_module/dup.cpp commands_module/dup.h \
+ commands_module/../conrollers/ICommand.h \
+ commands_module/../conrollers/../commands_module/name_genaration.h
+load.o: commands_module/load.cpp commands_module/load.h \
+ commands_module/../conrollers/ICommand.h \
+ commands_module/../conrollers/../commands_module/name_genaration.h \
+ commands_module/../dna_module/dna_data_base.h \
+ commands_module/../dna_module/dna_info.h \
+ commands_module/../dna_module/dna_sequence.h \
+ commands_module/../dna_module/my_exception.h \
+ commands_module/../dna_module/../IReader.h \
+ commands_module/../dna_module/../IWrither.h \
+ commands_module/../dna_module/dna_info.h \
+ commands_module/../file_reader.h commands_module/../IReader.h
+save.o: commands_module/save.cpp commands_module/save.h \
+ commands_module/../dna_module/dna_data_base.h \
+ commands_module/../dna_module/dna_info.h \
+ commands_module/../dna_module/dna_sequence.h \
+ commands_module/../dna_module/my_exception.h \
+ commands_module/../dna_module/../IReader.h \
+ commands_module/../dna_module/../IWrither.h \
+ commands_module/../conrollers/ICommand.h \
+ commands_module/../conrollers/../commands_module/name_genaration.h \
+ commands_module/../file_writer.h commands_module/../IWrither.h

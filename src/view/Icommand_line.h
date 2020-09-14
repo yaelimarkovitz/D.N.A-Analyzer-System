@@ -11,6 +11,7 @@
 #include "../conrollers/ICommand.h"
 #include "../IWrither.h"
 #include "../IReader.h"
+#include "../SharedPointer.h"
 
 class ICommandLine{
 
@@ -27,7 +28,7 @@ public:
 
 private:
 
-    CommandCollection* m_cmdCollection;
+    SharedPointer<CommandCollection>  m_cmdCollection;
     IWriter* m_writer;
     IReader* m_reader;
     ICommand* m_curCmd;
@@ -40,9 +41,7 @@ inline ICommandLine::ICommandLine( IWriter * write, IReader * read):
 {}
 
 inline ICommandLine::~ICommandLine()
-{
-    delete m_cmdCollection;
-}
+{}
 
 inline void ICommandLine::run()
 {
@@ -77,7 +76,7 @@ inline ICommandLine::ParamsList ICommandLine::parseCommand(const std::string &st
 
 inline std::string ICommandLine::executeCmd(ParamsList params)
 {
-    m_curCmd  = m_cmdCollection->getCmd(params[0]);
+    m_curCmd  = ((m_cmdCollection))->getCmd(params[0]);
 
     if (m_curCmd==NULL)
         return "sorry, there is no command with this name please try again";
