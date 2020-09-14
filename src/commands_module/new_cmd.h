@@ -19,59 +19,38 @@ public:
 
 private:
 
-    DnaInfo*            m_seq;
-    static const int    s_numOfParams = 2;
-
-    std::string  generateName();
-    std::string itoa(int num);
+    static const int    s_minNumOfParams = 2;
+    static const int    s_indexOfName = 2;
+    std::string         cutAt(const std::string& name);
 };
 
 inline New::~New()
 {
-    delete m_seq;
+
 }
 
 inline std::string New::execute(std::vector<std::string> params)
 {
-    if  (params.size() < s_numOfParams)
-        throw std::runtime_error("not enogh params");
+    if  (params.size() < s_minNumOfParams)
+        return "sorry, but you enter too little params";
 
-    if(m_seq!=NULL)
-        delete m_seq;
+    DnaInfo* seq;
 
-    if(params.size()==3){
-
-        m_seq = new DnaInfo(params[1],params[2].substr(1,params[2].size()-1));
-    }
-    else{
-        std::string name = generateName();
-        m_seq = new DnaInfo(params[1],name);
-    }
-    DnaDataBase::setNewDna(m_seq);
-    return m_seq->getInfo();
-
-}
-
-inline std::string New::generateName()
-{
-    static size_t number = 0;
-    number++;
-    return ("seq"+itoa(number));
-}
-
-inline std::string New::itoa(int num)
-{
-    std::string ss = "";
-    while(num)
+    if(params.size()==s_minNumOfParams)
     {
-        int x = num % 10;
-        num /= 10;
-        char i = '0';
-        i = i + x ;
-        ss = i + ss;
+        std::string name = NameGeneration<New>::create("seq");
+        seq = new DnaInfo(params[1],name);
     }
-    return ss;
+    else
+        seq = new DnaInfo(params[1],cutAt(params[s_indexOfName]));
+
+    DnaDataBase::setNewDna(seq);
+    return seq->getInfo();
+
 }
 
-
+inline std::string New::cutAt(const std::string &name)
+{
+    return name.substr(1,name.size()-1);
+}
 #endif //UNTITLED_NEW_CMD_H

@@ -25,6 +25,7 @@ inline CommandCollection::CommandCollection()
     m_commandList["new"] = new New;
     m_commandList["load"] = new Load;
     m_commandList["save"] = new Save;
+    m_commandList["slice"] = new Slice;
 }
 
 inline CommandCollection::~CommandCollection()

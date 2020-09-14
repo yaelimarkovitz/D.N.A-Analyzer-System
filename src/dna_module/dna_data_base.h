@@ -23,8 +23,10 @@ public:
     static DnaInfo*     findByName(const std::string& name);//return nullptr case there is no dna with that id
     static void         setNewDna(DnaInfo* dna);//TODO check it insert params to this function
 
+
 private:
 
+        //TODO change to shared pointer
     static MapNameToDna     dnaList;
     static MapIdToName      idList;
 

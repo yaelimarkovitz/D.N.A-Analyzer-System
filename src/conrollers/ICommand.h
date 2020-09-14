@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include "../commands_module/name_genaration.h"
 
 struct ICommand{
 

@@ -144,5 +144,5 @@ std::vector<int> DnaSequence::findConsensusSequences() const {
 }
 void DnaSequence::output(IWriter* writer) const
 {
-   writer->write("ATGTGTGTGTGT");
+   writer->write(toStr());
 }

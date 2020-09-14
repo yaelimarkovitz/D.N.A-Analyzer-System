@@ -6,6 +6,7 @@
 #define UNTITLED_ICOMMANDLINE_H
 #include <vector>
 #include <string>
+#include <sstream>
 #include "../conrollers/command_collection.h"
 #include "../conrollers/ICommand.h"
 #include "../IWrither.h"
@@ -65,23 +66,22 @@ inline void ICommandLine::run()
 inline ICommandLine::ParamsList ICommandLine::parseCommand(const std::string &str)
 {
     ParamsList params;
-    int len = 0;
-    for (size_t i = 0; i < str.size() ; ++i)
+    std::istringstream my(str);
+    std::string cuter;
+    while(getline(my,cuter,' '))
     {
-        if(str[i]==' ')
-        {
-            params.push_back(str.substr(((i-len)==0)? (0):(i-len+1),((i-len)==0)?len:len-1));
-            len=0;
-        }
-        len++;
+        params.push_back(cuter.c_str());
     }
-    params.push_back(str.substr(str.size()-len+1,len-1));
     return params;
 }
 
 inline std::string ICommandLine::executeCmd(ParamsList params)
 {
     m_curCmd  = m_cmdCollection->getCmd(params[0]);
+
+    if (m_curCmd==NULL)
+        return "sorry, there is no command with this name please try again";
+
     return m_curCmd->execute(params);
 }
 

@@ -8,5 +8,6 @@
 #include "new_cmd.h"
 #include "load.h"
 #include "save.h"
+#include "slice.h"
 
 #endif //UNTITLED_COMMANDS_H

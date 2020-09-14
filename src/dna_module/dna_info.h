@@ -21,7 +21,7 @@ public:
 
     size_t                  getId() const;
     std::string             getNmae() const;
-    const DnaSequence&      getDna() const ;
+    DnaSequence             getDna() const ;
     std::string             getInfo() ;
 
 private:
@@ -53,7 +53,7 @@ inline std::string DnaInfo::getNmae() const
     return m_name;
 }
 
-inline const DnaSequence& DnaInfo::getDna() const
+inline DnaSequence DnaInfo::getDna() const
 {
     return m_dna;
 }

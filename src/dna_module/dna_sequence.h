@@ -14,6 +14,7 @@ class DnaSequence{
 private:
 
     mutable size_t m_length_dna;
+    std::string    toStr()const;
     class Nucleotide{
 
     public:
@@ -54,6 +55,7 @@ public:
     std::vector <int>       findConsensusSequences() const ;
     int                     input(const char* name_file);
     void                    output(IWriter*) const;
+
 };
 
 inline DnaSequence::DnaSequence( char *seq):m_length_dna(strlen(seq)),m_dna_seq(new Nucleotide[m_length_dna])
@@ -134,7 +136,14 @@ inline const DnaSequence::Nucleotide& DnaSequence:: operator[]( size_t index) co
     return m_dna_seq[index];
 }
 
-
+inline std::string DnaSequence::toStr() const {
+    std::string tmp;
+    for (unsigned int i = 0; i < m_length_dna; ++i)
+    {
+        tmp.push_back(m_dna_seq[i].getChar());
+    }
+    return tmp;
+}
 
 ////////nuclutide class/////////////////////////////
 inline char DnaSequence::Nucleotide::getChar() const
