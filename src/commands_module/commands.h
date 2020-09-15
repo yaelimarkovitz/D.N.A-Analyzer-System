@@ -9,5 +9,6 @@
 #include "load.h"
 #include "save.h"
 #include "slice.h"
+#include "len.h"
 
 #endif //UNTITLED_COMMANDS_H

@@ -20,9 +20,9 @@ public:
     static MapNameToDna     createMap();
     static MapIdToName      createMapn();
 
-    static DnaInfo*     findById(size_t id) ;//return nullptr case there is no dna with that name
-    static DnaInfo*     findByName(const std::string& name);//return nullptr case there is no dna with that id
-    static void         setNewDna(DnaInfo* dna);//TODO check it insert params to this function
+    static DnaInfo*     findDna(size_t id) ;//return nullptr case there is no dna with that name
+    static DnaInfo*     findDna(const std::string& name);//return nullptr case there is no dna with that id
+    static void         setNewDna(DnaInfo* dna);
 
 
 private:
@@ -35,7 +35,7 @@ private:
     static bool isDnaExist(const std::string& name);
 };
 
-inline DnaInfo* DnaDataBase::findByName(const std::string &name)
+inline DnaInfo* DnaDataBase::findDna(const std::string &name)
 {
     if(isDnaExist(name))
     {
@@ -45,12 +45,12 @@ inline DnaInfo* DnaDataBase::findByName(const std::string &name)
     return NULL;
 }
 
-inline DnaInfo* DnaDataBase::findById(size_t id)
+inline DnaInfo* DnaDataBase::findDna(size_t id)
 {
     if(isDnaExist(id))
     {
         MapIdToName::iterator it = idList.find(id);
-        return findByName(it->second);
+        return findDna(it->second);
     }
     return NULL;
 }
