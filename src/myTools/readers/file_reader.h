@@ -29,8 +29,8 @@ inline FileReader::FileReader(const std::string &name):m_fileName(name)
 inline std::string FileReader::read()
 {
 
-    std::fstream newFile;
-    newFile.open(m_fileName,std::ios::in);
+    std::fstream newFile ;
+    newFile.open(m_fileName.c_str(),std::ios::in);
     std::string buffer;
     if(newFile.is_open())
     {

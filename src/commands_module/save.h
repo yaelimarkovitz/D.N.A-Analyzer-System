@@ -7,8 +7,9 @@
 
 #include "../dna_module/dna_data_base.h"
 #include "../conrollers/ICommand.h"
-#include "../file_writer.h"
+#include "myTools/writers/file_writer.h"
 #include <iostream>
+#include <cstdlib>
 
 class Save : public ICommand {
 
@@ -18,35 +19,45 @@ public:
     /*virtual*/std::string execute(std::vector<std::string> params);
 
 private:
-    static const int    numOfParams = 3;
+    static const int    s_minNumOfParams = 2;
     static const int    s_indexOfFileName = 2;
     static const int    s_indexOfDnaSeq = 1;
     std::string         cutSign(const std::string& name);//todo check what happen if ther is no dna with that name
+    const string &      convertToName(const int& id);
     std::string         m_fileName;
 };
 
-inline std::string Save::execute(std::vector<std::string> params) {
+inline std::string Save::execute(std::vector<std::string> params)
+{
 
-
-    if ( params.size() < numOfParams)
+    if (params.size() < s_minNumOfParams)
         return "sorry, but you enter too little params";
 
-    if (params.size() == numOfParams){
+    std::string name;
+    if (params[s_indexOfDnaSeq][0] == s_idSign)
+    {
+        name = convertToName(atoi(cutSign(params[s_indexOfDnaSeq]).c_str()));
+
+    }
+    else
+    {
+        name = cutSign(params[s_indexOfDnaSeq]);
+    }
+    if (params.size() == 3)
+    {
         m_fileName = params[s_indexOfFileName];
     }
     else
-        m_fileName  = NameGeneration<Save>::create(cutSign(params[s_indexOfDnaSeq]));
+        m_fileName  = NameGeneration<Save>::create(name)+".rowdna";
 
     IWriter * writer = new FileWriter(m_fileName);
-    std::string help = cutSign(params[s_indexOfDnaSeq]);
+    DnaInfo * dnaSeq = DnaDataBase::findDna(name);
 
-    switch (params[s_indexOfDnaSeq][0])
+    if (dnaSeq == NULL)
     {
-        case s_nameSign: DnaDataBase::findDna(cutSign(params[s_indexOfDnaSeq]))->getDna().output(writer);
-            break;
-        case s_idSign: DnaDataBase::findDna(atoi(help.c_str()))->getDna().output(writer);
-            break;
+        return "sorry , this dna doesnt exists";
     }
+    dnaSeq->getDna().output(writer);
 
     return "None";
 }
@@ -56,5 +67,8 @@ inline std::string Save::cutSign(const std::string &name)
     return name.substr(1,name.size()-1);
 }
 
-
+inline const string & Save::convertToName(const int &id)
+{
+    DnaDataBase::findNameById(id);
+}
 #endif //UNTITLED_SAVE_H

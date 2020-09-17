@@ -5,8 +5,8 @@
 #include <cstdio>
 #include <vector>
 #include "my_exception.h"
-#include "../IReader.h"
-#include "../IWrither.h"
+#include "myTools/readers/IReader.h"
+#include "myTools/writers/IWrither.h"
 
 
 class DnaSequence{

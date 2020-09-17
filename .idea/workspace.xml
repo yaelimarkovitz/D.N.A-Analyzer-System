@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="untitled" targetName="untitled" />
+      <config projectName="dna_analyzer_project_y_c_mby" targetName="dna_analyzer_project_y_c_mby" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e02a1b5d-6cda-4692-8351-fafdaffbd57f" name="Default Changelist" comment="" />
+    <list default="true" id="e02a1b5d-6cda-4692-8351-fafdaffbd57f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SharedPointer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/myTools/SharedPointer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands_module/dup.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands_module/len.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands_module/len.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands_module/load.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands_module/load.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands_module/load.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands_module/new_cmd.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands_module/save.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands_module/save.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands_module/save.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands_module/slice.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands_module/slice.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/console_reader.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/myTools/readers/console_reader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dna_module/dna_data_base.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/dna_module/dna_data_base.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dna_module/dna_info.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/dna_module/dna_info.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_reader.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/myTools/readers/file_reader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/file_writer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/file_writer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Icommand_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Icommand_line.h" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +40,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1egIYMMfGkR5L3zeYKaVNTcIDLl" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -32,6 +53,13 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/myTools/writers" />
+      <recent name="$PROJECT_DIR$/src/myTools" />
+      <recent name="$PROJECT_DIR$/src/myTools/readers" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,7 +74,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="untitled" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="untitled">
+    <configuration name="dna_analyzer_project_y_c_mby" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dna_analyzer_project_y_c_mby" TARGET_NAME="dna_analyzer_project_y_c_mby" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dna_analyzer_project_y_c_mby" RUN_TARGET_NAME="dna_analyzer_project_y_c_mby">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -64,10 +92,25 @@
       <updated>1594736856103</updated>
       <workItem from="1594736859921" duration="6171000" />
       <workItem from="1594745937886" duration="5869000" />
+      <workItem from="1600238670133" duration="1693000" />
+      <workItem from="1600243775037" duration="12738000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -4,6 +4,7 @@
 
 #ifndef UNTITLED_SLICE_H
 #define UNTITLED_SLICE_H
+#include <cstdlib>
 
 #include "../conrollers/ICommand.h"
 #include "../dna_module/dna_data_base.h"
@@ -49,7 +50,7 @@ inline std::string Slice::provideNewSeq(std::vector<std::string> params, int s_i
     }
     else
     {
-        newSeq = new DnaInfo( DnaDataBase::findDna(atoi(cutSign(params[s_indexOfName]).c_str()))->getDna().slice(s_ind,e_ind),
+        newSeq = new DnaInfo( DnaDataBase::findDna(std::atoi(cutSign(params[s_indexOfName]).c_str()))->getDna().slice(s_ind,e_ind),
                               getName(params));//todo generate name also if provided id
     }
 
@@ -61,6 +62,7 @@ inline std::string Slice::provideNewSeq(std::vector<std::string> params, int s_i
 inline std::string Slice::changeCurrSeq(std::vector<std::string> params, int s_ind, int e_ind) {
     return "hi";
 }
+
 inline std::string Slice::cutSign(const std::string &name)
 {
     return name.substr(1,name.size()-1);

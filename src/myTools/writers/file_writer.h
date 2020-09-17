@@ -29,7 +29,7 @@ inline FileWriter::FileWriter(std::string &name): m_fileName(name)
 inline void FileWriter::write(const std::string &output)
 {
     std::ofstream myfile;
-    myfile.open(m_fileName);
+    myfile.open((m_fileName).c_str());
     if (myfile.is_open())
     {
         myfile << output;

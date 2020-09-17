@@ -10,8 +10,8 @@
 
 #include "../view/Icommand_line.h"
 #include "command_collection.h"
-#include "../IWrither.h"
-#include "../IReader.h"
+#include "myTools/writers/IWrither.h"
+#include "myTools/readers/IReader.h"
 
 class SystemController {
 
@@ -30,7 +30,9 @@ private:
 };
 
 inline SystemController::SystemController( IWriter *write, IReader *read):m_cmd(new ICommandLine(write,read))
-{}
+{
+    initSystem();
+}
 
 inline SystemController::~SystemController()
 {
@@ -40,7 +42,6 @@ inline SystemController::~SystemController()
 inline void SystemController::initSystem()
 {
     std::cout<<"start system"<<std::endl;
-    run();
 }
 
 inline void SystemController::run()

@@ -10,7 +10,7 @@ template <typename T>
 class SharedPointer {
 
 public:
-    explicit SharedPointer(T* ptr = nullptr);
+    explicit SharedPointer(T* ptr = NULL);
     ~SharedPointer();
 
     T*	operator*();
@@ -41,7 +41,7 @@ template <typename U>
 inline SharedPointer<T>::SharedPointer(const SharedPointer<U> &other):m_ptr(other.getPtr())
 								     ,m_count(other.getCount()) 
 {
-    *m_count++;
+    (*m_count)++;
 }
 
 template <typename T>

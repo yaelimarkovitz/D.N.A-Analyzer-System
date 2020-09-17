@@ -13,6 +13,7 @@ typedef enum status{
    E_UP_TO_DATE,
    E_MODIFIED
 }status;
+
 class DnaInfo {
 
 public:
@@ -20,7 +21,7 @@ public:
     DnaInfo(DnaSequence,const std::string&);
 
     size_t                  getId() const;
-    std::string             getNmae() const;
+    const std::string &     getNmae() const;
     DnaSequence             getDna() const ;
     std::string             getInfo() ;
 
@@ -48,7 +49,7 @@ inline size_t DnaInfo::getId() const
     return m_id;
 }
 
-inline std::string DnaInfo::getNmae() const
+inline const std::string & DnaInfo::getNmae() const
 {
     return m_name;
 }

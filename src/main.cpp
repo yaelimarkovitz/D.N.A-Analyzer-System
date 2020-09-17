@@ -1,17 +1,17 @@
 //
 // Created by mby on 14/07/2020.
 //
-#include "console_reader.h"
-#include "console_writher.h"
+#include "myTools/readers/console_reader.h"
+#include "myTools/writers/console_writher.h"
 #include "conrollers/system_controller.h"
 int main(){
-    IWriter*  write= new ConsoleWriter;
+    IWriter*  writer= new ConsoleWriter;
     IReader* reader = new ConsoleReader;
 
-    SystemController mySystem(write,reader);
-    mySystem.initSystem();
+    SystemController mySystem(writer,reader);
+    mySystem.run();
 
-    delete write;
+    delete writer;
     delete reader;
 
     return 1;

@@ -8,7 +8,7 @@
 #include "../conrollers/ICommand.h"
 #include "../dna_module/dna_data_base.h"
 #include "../dna_module/dna_info.h"
-#include "../file_reader.h"
+#include "myTools/readers/file_reader.h"
 
 class Load : public ICommand {
 

@@ -9,9 +9,9 @@
 #include <sstream>
 #include "../conrollers/command_collection.h"
 #include "../conrollers/ICommand.h"
-#include "../IWrither.h"
-#include "../IReader.h"
-#include "../SharedPointer.h"
+#include "myTools/writers/IWrither.h"
+#include "myTools/readers/IReader.h"
+#include "myTools/SharedPointer.h"
 
 class ICommandLine{
 

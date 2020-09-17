@@ -8,7 +8,7 @@
 #include <string>
 #include <map>
 #include "dna_info.h"
-#include "../SharedPointer.h"
+#include "myTools/SharedPointer.h"
 
 class DnaDataBase{
 
@@ -22,6 +22,7 @@ public:
 
     static DnaInfo*     findDna(size_t id) ;//return nullptr case there is no dna with that name
     static DnaInfo*     findDna(const std::string& name);//return nullptr case there is no dna with that id
+    static const std::string&  findNameById(std::size_t);
     static void         setNewDna(DnaInfo* dna);
 
 
@@ -84,5 +85,11 @@ inline DnaDataBase::MapIdToName DnaDataBase::createMapn()
 {
     MapIdToName tmp;
     return tmp;
+}
+
+inline const std::string& DnaDataBase::findNameById(std::size_t id)
+{
+
+    findDna(id)->getNmae();
 }
 #endif //UNTITLED_DNA_DATA_BASE_H

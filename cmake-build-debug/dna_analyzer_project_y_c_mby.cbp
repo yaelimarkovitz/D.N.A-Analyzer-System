@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="dna_analyzer_project_y_c_mby"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dna_analyzer_project_y_c_mby">
+				<Option output="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/dna_analyzer_project_y_c_mby" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/view"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 dna_analyzer_project_y_c_mby"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dna_analyzer_project_y_c_mby/fast">
+				<Option output="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/dna_analyzer_project_y_c_mby" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/view"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 dna_analyzer_project_y_c_mby/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/commands.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/dup.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/len.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/load.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/name_genaration.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/new_cmd.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/save.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/slice.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/system_controller.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.cpp">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_info.cpp">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_info.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_sequence.cpp">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_sequence.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/my_exception.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/main.cpp">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/IReader.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/console_reader.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/file_reader.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/IWrither.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/console_writher.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/file_writer.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/view/Icommand_line.h">
+			<Option target="dna_analyzer_project_y_c_mby"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
