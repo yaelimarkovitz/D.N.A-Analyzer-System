@@ -11,5 +11,7 @@
 #include "slice.h"
 #include "len.h"
 #include "find.h"
-
+#include "find_all.h"
+#include "count.h"
+#include "rename.h"
 #endif //UNTITLED_COMMANDS_H

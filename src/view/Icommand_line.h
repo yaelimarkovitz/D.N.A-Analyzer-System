@@ -39,11 +39,15 @@ inline CommandLine::~CommandLine()
 
 inline void CommandLine::run(callBack exeFunc)
 {
-
-    std::string command = m_reader->read();
+    std::string command;
 
     while (command != "quit")
     {
+        command = m_reader->read();
+
+        if (command.empty())
+            continue;
+
         ParamsList params = parseCommand(command);
         try
         {
@@ -57,9 +61,7 @@ inline void CommandLine::run(callBack exeFunc)
         {
             m_writer->write(e.what());
         }
-        command = m_reader->read();
     }
-
 }
 
 inline CommandLine::ParamsList CommandLine::parseCommand(const std::string &str)

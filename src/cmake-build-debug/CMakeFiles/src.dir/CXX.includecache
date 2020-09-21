@@ -19,8 +19,22 @@ len.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/len.h
 find.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find.h
+find_all.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find_all.h
+count.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/count.h
+rename.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/rename.h
+
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/count.h
+../conrollers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find.h
+../conrollers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find_all.h
 ../conrollers/ICommand.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
 
@@ -56,6 +70,10 @@ sstream
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.h
 
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/rename.h
+../conrollers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/save.h
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.h
@@ -85,10 +103,6 @@ vector
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/name_genaration.h
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.h
-
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.cpp
-command_collection.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.h
 map

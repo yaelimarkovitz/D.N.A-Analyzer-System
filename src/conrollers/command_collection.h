@@ -45,7 +45,10 @@ inline std::map<std::string,ICommand*>  CommandCollection::initMap()
     i["save"] = new Save;
     i["slice"] = new Slice;
     i["len"] = new Len;
-    i["find"] = new FindAll;
+    i["find"] = new Find;
+    i["findall"] = new FindAll;
+    i["count"] = new Count;
+    i["rename"] = new Rename;
     return i;
 }
 #endif //UNTITLED_COMMAND_COLLECTION_H

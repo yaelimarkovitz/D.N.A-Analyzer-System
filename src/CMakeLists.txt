@@ -41,4 +41,4 @@ add_executable(src
         myTools/SharedPointer.h
         view/Icommand_line.h
         view/UI.h
-        main.cpp)
+        main.cpp commands_module/find_all.h commands_module/count.h commands_module/rename.h commands_module/list.h)

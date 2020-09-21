@@ -101,13 +101,22 @@
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/commands.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/count.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/dup.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find_all.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/len.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/list.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/load.h">
@@ -117,6 +126,9 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/new_cmd.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/rename.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/save.h">

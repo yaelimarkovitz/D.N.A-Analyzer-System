@@ -26,6 +26,7 @@ public:
     static const std::string&   findNameById(std::size_t);
     static void                 setNewDna(DnaInfo* dna);
     static void                 updateDna (const std::string & name, DnaSequence d);
+    static void                 updateName(const std::string& curName, const std::string& newName);
 
 
 private:
@@ -97,5 +98,14 @@ inline const std::string& DnaDataBase::findNameById(std::size_t id)
 inline void DnaDataBase::updateDna(const std::string &name, DnaSequence d)
 {
     findDna(name)->updateDna(d);
+}
+
+inline void DnaDataBase::updateName(const std::string &curName, const std::string &newName)
+{
+    DnaInfo* d = findDna(curName);
+    idList[d->getId()] = newName;
+    dnaList.erase(curName);
+    dnaList[newName] = d;
+    d->updateName(newName);
 }
 #endif //UNTITLED_DNA_DATA_BASE_H

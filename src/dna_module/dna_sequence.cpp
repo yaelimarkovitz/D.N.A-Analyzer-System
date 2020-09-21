@@ -39,12 +39,15 @@ std::vector<int> DnaSequence::findAll(const DnaSequence d) const {
     std::vector<int> indexes ;
     int ind;
     int i =0;
-    while (i < (int)(len1-len2)){
+    while (i < (int)(len1-len2))
+    {
         ind = tmp.find(d);
         if(ind ==-1)
         {
             break;
-        } else{
+        }
+        else
+        {
             indexes.push_back(ind);
             i=int(ind+len2);
             tmp = tmp.slice(i,(int)tmp.length());
@@ -74,7 +77,9 @@ std::vector<int> DnaSequence::findAll(const DnaSequence d) const {
     }
     return true;
 }
-int DnaSequence::find(const DnaSequence d) const {
+
+int DnaSequence::find(const DnaSequence d) const
+{
     size_t len1 = m_length_dna;
     size_t len2 = d.length();
 
@@ -101,11 +106,14 @@ DnaSequence DnaSequence::slice(int start, int end) {
     }
     return DnaSequence(seq);
 }
-DnaSequence  DnaSequence::pair() const {
+DnaSequence  DnaSequence::pair() const
+{
     std::string seq;
     int j = 0;
-    for (size_t i = m_length_dna; i >0; --i) {
-        switch (m_dna_seq[i-1].getChar()){
+    for (size_t i = m_length_dna; i >0; --i)
+    {
+        switch (m_dna_seq[i-1].getChar())
+        {
             case 'C':seq.push_back('G');
                 break;
             case 'G':seq.push_back('C');
@@ -119,7 +127,9 @@ DnaSequence  DnaSequence::pair() const {
     }
     return DnaSequence(seq);
 }
-std::vector<int> DnaSequence::findConsensusSequences() const {
+
+std::vector<int> DnaSequence::findConsensusSequences() const
+{
     std::vector <int> first=findAll((char*)"ATG");
     std::vector<int> last1 =findAll((char*)"TAG");
     std::vector<int> last2 =findAll((char*)"TAA");
