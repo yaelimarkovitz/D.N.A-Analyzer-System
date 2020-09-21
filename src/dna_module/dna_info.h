@@ -26,7 +26,8 @@ public:
     void                    updateDna( DnaSequence d);
     void                    updateName(const std::string& newName);
     void                    setStatus(status s);
-    std::string             getInfo() ;
+    std::string getInfo();
+    std::string getInfoWithStatus();
 
 private:
 
@@ -35,7 +36,7 @@ private:
     std::string     m_name;
     status          m_st;
     static size_t   s_counterId;
-
+    std::vector<std::string> m_status;
     static size_t   generateId();
 };
 
@@ -44,7 +45,10 @@ inline DnaInfo::DnaInfo(DnaSequence dna,  const std::string & name):
                     m_id(generateId()),
                     m_name(name),
                     m_st(E_NEW)
-                    {
+{
+    m_status.push_back("new");
+    m_status.push_back("up_to_date");
+    m_status.push_back("modified");
 }
 
 inline size_t DnaInfo::getId() const
@@ -70,14 +74,26 @@ inline size_t DnaInfo::generateId()
 inline std::string DnaInfo::getInfo()
 {
     std::ostringstream ss ;
-    ss<<m_id;
+    ss << m_id;
     std::string tmp;
-    for (unsigned int i = 0; i < m_dna.length(); ++i) {
+    for (unsigned int i = 0; i < m_dna.length(); ++i)
+    {
         tmp.push_back(m_dna[i].getChar());
     }
     return "[" + ss.str()+ "] " + m_name + ": " + tmp;
 }
 
+inline std::string DnaInfo::getInfoWithStatus() //todo extract to other func
+{
+    std::ostringstream ss ;
+    ss << m_id;
+    std::string tmp;
+    for (unsigned int i = 0; i < m_dna.length(); ++i)
+    {
+        tmp.push_back(m_dna[i].getChar());
+    }
+    return "[" + ss.str()+ "] " + m_name + " "+ m_status[m_st] +" "+ tmp;
+}
 inline void DnaInfo::updateDna(DnaSequence d)
 {
     m_dna = d;

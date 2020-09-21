@@ -50,6 +50,7 @@ inline std::map<std::string,ICommand*>  CommandCollection::initMap()
     i["count"] = new Count;
     i["rename"] = new Rename;
     i["pair"] = new Pair;
+    i["show"] = new Show;
     return i;
 }
 #endif //UNTITLED_COMMAND_COLLECTION_H

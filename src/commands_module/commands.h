@@ -15,4 +15,5 @@
 #include "count.h"
 #include "rename.h"
 #include "pair.h"
+#include "show.h"
 #endif //UNTITLED_COMMANDS_H
