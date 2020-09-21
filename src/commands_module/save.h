@@ -58,7 +58,7 @@ inline std::string Save::execute(std::vector<std::string> params)
         return "sorry , this dna doesnt exists";
     }
     dnaSeq->getDna().output(writer);
-
+    dnaSeq->setStatus(E_UP_TO_DATE);
     return "None";
 }
 

@@ -14,4 +14,5 @@
 #include "find_all.h"
 #include "count.h"
 #include "rename.h"
+#include "pair.h"
 #endif //UNTITLED_COMMANDS_H

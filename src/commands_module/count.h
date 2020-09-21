@@ -22,7 +22,6 @@ private:
     bool                    isSign(const std::string&);
     std::string             findExpresion(const std::string& seq1,const std::string& exp);
     std::string             findSeq(const std::string& seq1,const std::string& seq2);
-    std::string             convertVecToStr(const std::vector<int>& vec);
 };
 
 inline std::string Count::execute(std::vector<std::string> params)
@@ -68,13 +67,5 @@ inline bool Count::isSign(const std::string & seq) {
     return seq[0]==s_idSign || seq[0] == s_nameSign;
 }
 
-inline std::string Count::convertVecToStr(const std::vector<int> &vec)
-{
-    std::string ret = "";
-    for (int i = 0; i < vec.size(); ++i) {
-        ret += NameGeneration<Count>::itoa(vec[i]);
-        ret+=" ";
-    }
-    return ret;
-}
+
 #endif //UNTITLED_COUNT_H

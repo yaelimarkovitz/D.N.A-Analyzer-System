@@ -13,12 +13,17 @@ include_directories(view)
 
 add_executable(src
         commands_module/commands.h
+        commands_module/count.h
         commands_module/dup.h
         commands_module/find.h
+        commands_module/find_all.h
         commands_module/len.h
+        commands_module/list.h
         commands_module/load.h
         commands_module/name_genaration.h
         commands_module/new_cmd.h
+        commands_module/pair.h
+        commands_module/rename.h
         commands_module/save.h
         commands_module/slice.h
         conrollers/command_collection.cpp
@@ -38,7 +43,8 @@ add_executable(src
         myTools/writers/console_writher.h
         myTools/writers/file_writer.h
         myTools/writers/IWrither.h
+        myTools/not_found_exception.h
         myTools/SharedPointer.h
         view/Icommand_line.h
         view/UI.h
-        main.cpp commands_module/find_all.h commands_module/count.h commands_module/rename.h commands_module/list.h)
+        main.cpp)

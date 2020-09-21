@@ -60,6 +60,7 @@ Slice::provideNewSeq(std::vector<std::string> params, const DnaSequence &sliceSe
 inline std::string Slice::changeCurrSeq(const DnaSequence &sliceSeq, DnaInfo *currSeq)
 {
     currSeq->updateDna(sliceSeq);
+    currSeq->setStatus(E_MODIFIED);
     return currSeq->getInfo();
 }
 

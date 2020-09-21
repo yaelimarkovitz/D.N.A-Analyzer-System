@@ -71,7 +71,7 @@ inline bool FindAll::isSign(const std::string & seq) {
 inline std::string FindAll::convertVecToStr(const std::vector<int> &vec)
 {
     std::string ret = "";
-    for (int i = 0; i < vec.size(); ++i) {
+    for (unsigned int i = 0; i < vec.size(); ++i) {
         ret += NameGeneration<FindAll>::itoa(vec[i]);
         ret+=" ";
     }

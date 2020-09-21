@@ -9,6 +9,7 @@ CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../commands_module/len.h
 CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../commands_module/load.h
 CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../commands_module/name_genaration.h
 CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../commands_module/new_cmd.h
+CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../commands_module/pair.h
 CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../commands_module/rename.h
 CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../commands_module/save.h
 CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../commands_module/slice.h
@@ -55,6 +56,7 @@ CMakeFiles/src.dir/main.cpp.o: ../commands_module/len.h
 CMakeFiles/src.dir/main.cpp.o: ../commands_module/load.h
 CMakeFiles/src.dir/main.cpp.o: ../commands_module/name_genaration.h
 CMakeFiles/src.dir/main.cpp.o: ../commands_module/new_cmd.h
+CMakeFiles/src.dir/main.cpp.o: ../commands_module/pair.h
 CMakeFiles/src.dir/main.cpp.o: ../commands_module/rename.h
 CMakeFiles/src.dir/main.cpp.o: ../commands_module/save.h
 CMakeFiles/src.dir/main.cpp.o: ../commands_module/slice.h

@@ -49,6 +49,7 @@ inline std::map<std::string,ICommand*>  CommandCollection::initMap()
     i["findall"] = new FindAll;
     i["count"] = new Count;
     i["rename"] = new Rename;
+    i["pair"] = new Pair;
     return i;
 }
 #endif //UNTITLED_COMMAND_COLLECTION_H

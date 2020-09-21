@@ -25,6 +25,7 @@ public:
     DnaSequence             getDna() const ;
     void                    updateDna( DnaSequence d);
     void                    updateName(const std::string& newName);
+    void                    setStatus(status s);
     std::string             getInfo() ;
 
 private:
@@ -85,5 +86,9 @@ inline void DnaInfo::updateDna(DnaSequence d)
 inline void DnaInfo::updateName(const std::string &newName)
 {
     m_name = newName;
+}
+
+inline void DnaInfo::setStatus(status s) {
+    m_st = s;
 }
 #endif //UNTITLED_DNA_INFO_H
