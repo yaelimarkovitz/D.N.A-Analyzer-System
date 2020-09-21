@@ -10,5 +10,6 @@
 #include "save.h"
 #include "slice.h"
 #include "len.h"
+#include "find.h"
 
 #endif //UNTITLED_COMMANDS_H

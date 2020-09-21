@@ -1,0 +1,3 @@
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/cmake-build-debug/CMakeFiles/src.dir
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/cmake-build-debug/CMakeFiles/edit_cache.dir

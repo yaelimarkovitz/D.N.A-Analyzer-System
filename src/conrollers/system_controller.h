@@ -5,19 +5,24 @@
 #ifndef DNA_PROJECT_SYSTEM_CONTROLLER_H
 #define DNA_PROJECT_SYSTEM_CONTROLLER_H
 
+
 #include <iostream>
 
 
-#include "../view/Icommand_line.h"
+#include "../view/UI.h"
 #include "command_collection.h"
-#include "myTools/writers/IWrither.h"
-#include "myTools/readers/IReader.h"
+#include "../myTools/writers/IWrither.h"
+#include "../myTools/readers/IReader.h"
+
+
 
 class SystemController {
 
 public:
 
-    SystemController(IWriter* write , IReader* read);
+    typedef std::string (*callBack)(std::string,std::vector<std::string>);
+
+    SystemController(UI * userView);
     ~SystemController();
 
     void initSystem();
@@ -26,17 +31,17 @@ public:
 
 private:
 
-    ICommandLine * m_cmd;
+    UI * m_userView;
+    static std::string makeCallBack(std::string, std::vector<std::string>);
 };
 
-inline SystemController::SystemController( IWriter *write, IReader *read):m_cmd(new ICommandLine(write,read))
+inline SystemController::SystemController( UI * userView):m_userView(userView)
 {
     initSystem();
 }
 
 inline SystemController::~SystemController()
 {
-    delete m_cmd;
 }
 
 inline void SystemController::initSystem()
@@ -46,12 +51,18 @@ inline void SystemController::initSystem()
 
 inline void SystemController::run()
 {
-    m_cmd->run();
+    callBack funcToExe = makeCallBack;
+    m_userView->run( funcToExe );
     quitSystem();
 }
 
 inline void SystemController::quitSystem()
 {
     printf("finish system\n");
+}
+
+inline std::string SystemController::makeCallBack(std::string command, std::vector<std::string> params)
+{
+    return CommandCollection::getCmd(command)->execute(params);
 }
 #endif //DNA_PROJECT_SYSTEM_CONTROLLER_H

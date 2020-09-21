@@ -32,11 +32,8 @@ inline std::string Len::execute(std::vector<std::string> params)
         return "sorry, but you have to enter dna id with #,please try again";
 
     size_t id = atoi(cutSign(params[1]).c_str());
+
     DnaInfo* seqToAnalyze = DnaDataBase::findDna(id);
-
-    if (seqToAnalyze ==NULL)
-        return "sorry, but this dna sequence doesn't exists please enter another dna";
-
     return NameGeneration<Len>::itoa (seqToAnalyze->getDna().length());
 }
 

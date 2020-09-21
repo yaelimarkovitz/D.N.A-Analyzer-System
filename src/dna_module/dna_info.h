@@ -23,6 +23,7 @@ public:
     size_t                  getId() const;
     const std::string &     getNmae() const;
     DnaSequence             getDna() const ;
+    void                    updateDna( DnaSequence d);
     std::string             getInfo() ;
 
 private:
@@ -75,5 +76,8 @@ inline std::string DnaInfo::getInfo()
     return "[" + ss.str()+ "] " + m_name + ": " + tmp;
 }
 
-
+inline void DnaInfo::updateDna(DnaSequence d)
+{
+    m_dna = d;
+}
 #endif //UNTITLED_DNA_INFO_H

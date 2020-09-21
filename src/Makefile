@@ -1,7 +1,7 @@
 
 TARGET=main
 
-SOURCES=$(wildcard *.cpp) $(wildcard */*.cpp)
+SOURCES=$(wildcard *.cpp) $(wildcard */*.cpp) $(wildcard */*/*.cpp) $(wildcard */*/*/*.cpp)
 
 OBJS=$(SOURCES:.cpp=.o)
 

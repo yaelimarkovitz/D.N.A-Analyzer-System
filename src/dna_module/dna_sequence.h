@@ -5,8 +5,8 @@
 #include <cstdio>
 #include <vector>
 #include "my_exception.h"
-#include "myTools/readers/IReader.h"
-#include "myTools/writers/IWrither.h"
+#include "../myTools/readers/IReader.h"
+#include "../myTools/writers/IWrither.h"
 
 
 class DnaSequence{
@@ -38,7 +38,7 @@ private:
 public:
     DnaSequence(){};
     DnaSequence( char* seq);
-    DnaSequence(std::string &seq);
+    DnaSequence(const std::string &seq);
     DnaSequence(const DnaSequence& d);
     DnaSequence(IReader*);
 
@@ -62,7 +62,7 @@ inline DnaSequence::DnaSequence( char *seq):m_length_dna(strlen(seq)),m_dna_seq(
 {
         init(seq);
 }
-inline DnaSequence::DnaSequence(std::string &seq):m_length_dna(seq.size()),m_dna_seq(new Nucleotide[m_length_dna])
+inline DnaSequence::DnaSequence(const std::string &seq): m_length_dna(seq.size()), m_dna_seq(new Nucleotide[m_length_dna])
 {
         init(const_cast<char*>(seq.c_str()));
 }

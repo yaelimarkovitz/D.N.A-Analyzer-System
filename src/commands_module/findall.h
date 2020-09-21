@@ -1,15 +1,12 @@
 //
-// Created by mby on 15/09/2020.
+// Created by mby on 21/09/2020.
 //
 
-#ifndef UNTITLED_FIND_H
-#define UNTITLED_FIND_H
-
-#include "../conrollers/ICommand.h"
-
-class FindAll: public ICommand{
+#ifndef UNTITLED_FindALL_H
+#define UNTITLED_FindALL_H
+class FindAll:public ICommand{
 public:
-    ~FindAll(){};
+    ~FindAllAll(){};
     /*virtual*/std::string execute(std::vector<std::string> params);
 
 private:
@@ -20,8 +17,8 @@ private:
     std::string             cutSign(const std::string& name);
     std::string             convertToName(const std::string &seq);
     bool                    isSign(const std::string&);
-    std::string             findExpresion(const std::string& seq1,const std::string& exp);
-    std::string             findSeq(const std::string& seq1,const std::string& seq2);
+    std::string             FindAllExpresion(const std::string& seq1,const std::string& exp);
+    std::string             FindAllSeq(const std::string& seq1,const std::string& seq2);
 };
 
 inline std::string FindAll::execute(std::vector<std::string> params)
@@ -32,20 +29,20 @@ inline std::string FindAll::execute(std::vector<std::string> params)
     std::string seq1 = convertToName(params[s_numofSeq1]);
 
     if (!isSign(params[s_numOfSeq2]))
-        return findExpresion (seq1, params[s_numOfSeq2]);
+        return FindAllExpresion (seq1, params[s_numOfSeq2]);
 
-    return findSeq (seq1, params[s_numOfSeq2]);
+    return FindAllSeq (seq1, params[s_numOfSeq2]);
 }
 
-inline std::string FindAll::findExpresion(const std::string &seq1, const std::string &exp)
+inline std::string FindAll::FindAllExpresion(const std::string &seq1, const std::string &exp)
 {
-    return NameGeneration<FindAll>::itoa(DnaDataBase::findDna(seq1)->getDna().find(exp));
+    return NameGeneration<FindAll>::itoa(DnaDataBase::FindAllDna(seq1)->getDna().FindAll(exp));
 }
 
-inline std::string FindAll::findSeq(const std::string &seq1, const std::string &seq2)
+inline std::string FindAll::FindAllSeq(const std::string &seq1, const std::string &seq2)
 {
     std::string name2 = convertToName(seq2);
-    return NameGeneration<FindAll>::itoa(DnaDataBase::findDna(seq1)->getDna().find(DnaDataBase::findDna(name2)->getDna()));
+    return NameGeneration<FindAll>::itoa(DnaDataBase::FindAllDna(seq1)->getDna().FindAll(DnaDataBase::FindAllDna(name2)->getDna()));
 }
 
 inline std::string FindAll::cutSign(const std::string &name)
@@ -58,7 +55,7 @@ inline std::string FindAll::convertToName(const std::string &seq)
     if (seq[0]==s_idSign)
     {
         int id = atoi(cutSign(seq).c_str());
-        return DnaDataBase::findNameById(id);
+        return DnaDataBase::FindAllNameById(id);
     }
     return cutSign(seq);
 }
@@ -66,4 +63,4 @@ inline std::string FindAll::convertToName(const std::string &seq)
 inline bool FindAll::isSign(const std::string & seq) {
     return seq[0]==s_idSign || seq[0] == s_nameSign;
 }
-#endif //UNTITLED_FIND_H
+#endif //UNTITLED_FindAllALL_H

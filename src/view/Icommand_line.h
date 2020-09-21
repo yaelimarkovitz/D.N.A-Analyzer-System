@@ -7,43 +7,37 @@
 #include <vector>
 #include <string>
 #include <sstream>
-#include "../conrollers/command_collection.h"
-#include "../conrollers/ICommand.h"
-#include "myTools/writers/IWrither.h"
-#include "myTools/readers/IReader.h"
-#include "myTools/SharedPointer.h"
+#include "../myTools/writers/IWrither.h"
+#include "../myTools/readers/IReader.h"
+#include "UI.h"
 
-class ICommandLine{
+class CommandLine : public UI{
 
 public:
 
-    ICommandLine(IWriter*,IReader*);
-    ~ICommandLine();
+
+    CommandLine(IWriter*, IReader*);
+    ~CommandLine();
 
     typedef std::vector <std::string> ParamsList;
 
-    void            run();
+    void            run(callBack exeFunc);
     ParamsList      parseCommand(const std::string& str);
-    std::string     executeCmd(ParamsList);
 
 private:
 
-    SharedPointer<CommandCollection>  m_cmdCollection;
     IWriter* m_writer;
     IReader* m_reader;
-    ICommand* m_curCmd;
+
 };
 
-inline ICommandLine::ICommandLine( IWriter * write, IReader * read):
-                m_cmdCollection(new CommandCollection()),
-                m_writer(write),m_reader(read),
-                m_curCmd(NULL)
+inline CommandLine::CommandLine(IWriter * write, IReader * read):m_writer(write),m_reader(read)
 {}
 
-inline ICommandLine::~ICommandLine()
+inline CommandLine::~CommandLine()
 {}
 
-inline void ICommandLine::run()
+inline void CommandLine::run(callBack exeFunc)
 {
 
     std::string command = m_reader->read();
@@ -51,18 +45,24 @@ inline void ICommandLine::run()
     while (command != "quit")
     {
         ParamsList params = parseCommand(command);
-        std::string output = executeCmd(params);
-
-        if(output!="None")
+        try
         {
-            m_writer->write(output);
+            std::string output = exeFunc (params[0], params);
+            if(output!="None")
+            {
+                m_writer->write(output);
+            }
+        }
+        catch (exception& e)
+        {
+            m_writer->write(e.what());
         }
         command = m_reader->read();
     }
 
 }
 
-inline ICommandLine::ParamsList ICommandLine::parseCommand(const std::string &str)
+inline CommandLine::ParamsList CommandLine::parseCommand(const std::string &str)
 {
     ParamsList params;
     std::istringstream my(str);
@@ -74,14 +74,6 @@ inline ICommandLine::ParamsList ICommandLine::parseCommand(const std::string &st
     return params;
 }
 
-inline std::string ICommandLine::executeCmd(ParamsList params)
-{
-    m_curCmd  = ((m_cmdCollection))->getCmd(params[0]);
 
-    if (m_curCmd==NULL)
-        return "sorry, there is no command with this name please try again";
-
-    return m_curCmd->execute(params);
-}
 
 #endif //UNTITLED_ICOMMANDLINE_H

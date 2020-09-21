@@ -8,7 +8,8 @@
 #include <string>
 #include <map>
 #include "dna_info.h"
-#include "myTools/SharedPointer.h"
+#include "../myTools/not_found_exception.h"
+
 
 class DnaDataBase{
 
@@ -20,10 +21,11 @@ public:
     static MapNameToDna     createMap();
     static MapIdToName      createMapn();
 
-    static DnaInfo*     findDna(size_t id) ;//return nullptr case there is no dna with that name
-    static DnaInfo*     findDna(const std::string& name);//return nullptr case there is no dna with that id
-    static const std::string&  findNameById(std::size_t);
-    static void         setNewDna(DnaInfo* dna);
+    static DnaInfo*             findDna(size_t id) ;//throw exeption case there is no dna with this id
+    static DnaInfo*             findDna(const std::string& name);//throw exeption case there is no dna with this name
+    static const std::string&   findNameById(std::size_t);
+    static void                 setNewDna(DnaInfo* dna);
+    static void                 updateDna (const std::string & name, DnaSequence d);
 
 
 private:
@@ -43,7 +45,7 @@ inline DnaInfo* DnaDataBase::findDna(const std::string &name)
         std::map <std::string , DnaInfo*> ::iterator it = dnaList.find(name);
         return it->second;
     }
-    return NULL;
+    throw NotExists();
 }
 
 inline DnaInfo* DnaDataBase::findDna(size_t id)
@@ -53,7 +55,7 @@ inline DnaInfo* DnaDataBase::findDna(size_t id)
         MapIdToName::iterator it = idList.find(id);
         return findDna(it->second);
     }
-    return NULL;
+    throw NotExists();
 }
 
 inline bool DnaDataBase::isDnaExist(const std::string& name)
@@ -89,7 +91,11 @@ inline DnaDataBase::MapIdToName DnaDataBase::createMapn()
 
 inline const std::string& DnaDataBase::findNameById(std::size_t id)
 {
+    return findDna(id)->getNmae();
+}
 
-    findDna(id)->getNmae();
+inline void DnaDataBase::updateDna(const std::string &name, DnaSequence d)
+{
+    findDna(name)->updateDna(d);
 }
 #endif //UNTITLED_DNA_DATA_BASE_H

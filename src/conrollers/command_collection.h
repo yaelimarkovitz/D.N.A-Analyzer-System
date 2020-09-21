@@ -12,30 +12,19 @@
 class CommandCollection {
 
 public:
-    CommandCollection();
-    ~CommandCollection();
-    ICommand* getCmd(const std::string& name);
 
-private:
-    std::map<std::string,ICommand*> m_commandList;
+    static ICommand* getCmd(const std::string& name);
+    static std::map<std::string,ICommand*> m_commandList;
+    static std::map<std::string,ICommand*> initMap();
 };
 
-inline CommandCollection::CommandCollection()
-{
-    m_commandList["new"] = new New;
-    m_commandList["load"] = new Load;
-    m_commandList["save"] = new Save;
-    m_commandList["slice"] = new Slice;
-    m_commandList["len"] = new Len;
-}
-
-inline CommandCollection::~CommandCollection()
-{
-    for (std::map<std::string,ICommand*>::iterator it = m_commandList.begin(); it != m_commandList.end();it ++)
-    {
-        delete it->second;
-    }
-}
+//inline CommandCollection::~CommandCollection()
+//{
+//    for (std::map<std::string,ICommand*>::iterator it = m_commandList.begin(); it != m_commandList.end();it ++)
+//    {
+//        delete it->second;
+//    }
+//}
 
 inline ICommand* CommandCollection::getCmd(const std::string &name)
 {
@@ -43,9 +32,20 @@ inline ICommand* CommandCollection::getCmd(const std::string &name)
     {
         return NULL;
     }
-
     return m_commandList[name];
+
 }
 
-
+inline std::map<std::string,ICommand*>  CommandCollection::initMap()
+{
+    std::map<std::string,ICommand*> i;
+    i["new"] = new New;
+    i["new"] = new New;
+    i["load"] = new Load;
+    i["save"] = new Save;
+    i["slice"] = new Slice;
+    i["len"] = new Len;
+    i["find"] = new FindAll;
+    return i;
+}
 #endif //UNTITLED_COMMAND_COLLECTION_H

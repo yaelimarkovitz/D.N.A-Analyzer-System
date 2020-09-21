@@ -61,7 +61,7 @@ std::vector<int> DnaSequence::findAll(const DnaSequence d) const {
     }
     catch(InVailidNeculeotide &e)
     {
-        std::cout<<"there is problem with your input sorry";
+//        std::cout<<"there is problem with your input sorry";
         throw ;
     }
 }

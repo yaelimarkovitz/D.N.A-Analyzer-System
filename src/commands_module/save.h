@@ -7,7 +7,7 @@
 
 #include "../dna_module/dna_data_base.h"
 #include "../conrollers/ICommand.h"
-#include "myTools/writers/file_writer.h"
+#include "../myTools/writers/file_writer.h"
 #include <iostream>
 #include <cstdlib>
 
@@ -22,7 +22,7 @@ private:
     static const int    s_minNumOfParams = 2;
     static const int    s_indexOfFileName = 2;
     static const int    s_indexOfDnaSeq = 1;
-    std::string         cutSign(const std::string& name);//todo check what happen if ther is no dna with that name
+    std::string         cutSign(const std::string& name);
     const string &      convertToName(const int& id);
     std::string         m_fileName;
 };
@@ -69,6 +69,6 @@ inline std::string Save::cutSign(const std::string &name)
 
 inline const string & Save::convertToName(const int &id)
 {
-    DnaDataBase::findNameById(id);
+    return DnaDataBase::findNameById(id);
 }
 #endif //UNTITLED_SAVE_H
