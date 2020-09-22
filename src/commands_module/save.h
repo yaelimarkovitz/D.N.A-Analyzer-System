@@ -23,42 +23,32 @@ private:
     static const int    s_indexOfFileName = 2;
     static const int    s_indexOfDnaSeq = 1;
     std::string         cutSign(const std::string& name);
-    const string &      convertToName(const int& id);
+    std::string         convertToName(const string &seq);
     std::string         m_fileName;
 };
 
 inline std::string Save::execute(std::vector<std::string> params)
 {
-
     if (params.size() < s_minNumOfParams)
-        return "sorry, but you enter too little params";
+        throw TooLittleParams();
 
-    std::string name;
-    if (params[s_indexOfDnaSeq][0] == s_idSign)
-    {
-        name = convertToName(atoi(cutSign(params[s_indexOfDnaSeq]).c_str()));
+    std::string name = convertToName(params[s_indexOfDnaSeq]);
 
-    }
-    else
-    {
-        name = cutSign(params[s_indexOfDnaSeq]);
-    }
     if (params.size() == 3)
     {
         m_fileName = params[s_indexOfFileName];
     }
     else
+    {
         m_fileName  = NameGeneration<Save>::create(name)+".rowdna";
+    }
 
     IWriter * writer = new FileWriter(m_fileName);
     DnaInfo * dnaSeq = DnaDataBase::findDna(name);
 
-    if (dnaSeq == NULL)
-    {
-        return "sorry , this dna doesnt exists";
-    }
     dnaSeq->getDna().output(writer);
     dnaSeq->setStatus(E_UP_TO_DATE);
+
     return "None";
 }
 
@@ -67,8 +57,13 @@ inline std::string Save::cutSign(const std::string &name)
     return name.substr(1,name.size()-1);
 }
 
-inline const string & Save::convertToName(const int &id)
+inline  std::string  Save::convertToName(const string &seq)
 {
-    return DnaDataBase::findNameById(id);
+    if (seq[0]==s_idSign)
+    {
+        int id = atoi(cutSign(seq).c_str());
+        return DnaDataBase::findNameById(id);
+    }
+    return cutSign(seq);
 }
 #endif //UNTITLED_SAVE_H

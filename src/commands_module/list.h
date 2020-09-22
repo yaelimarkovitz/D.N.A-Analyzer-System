@@ -18,7 +18,7 @@ private:
 inline std::string List::execute(std::vector<std::string> params)
 {
     if (params.size() < s_nunOfParams)
-        return "sorry,but you enter too little params";
+        throw TooLittleParams();
 
 
 }

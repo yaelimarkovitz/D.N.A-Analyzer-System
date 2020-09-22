@@ -31,7 +31,7 @@ private:
 inline std::string Slice::execute(std::vector<std::string> params)
 {
     if (params.size() < s_minNumOfParams)
-        return "sorry,but you enter too little params";
+        throw TooLittleParams();
 
     int startIndex = atoi( params[s_indexOfStart].c_str() );
     int endIndex = atoi( params[s_indexOfStart+1].c_str() );

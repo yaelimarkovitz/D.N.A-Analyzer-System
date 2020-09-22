@@ -22,7 +22,7 @@ private:
 inline std::string Rename::execute(std::vector<std::string> params)
 {
     if (params.size() < s_numOfParams)
-        return "sorry,but you enter too little params";
+        throw TooLittleParams();
 
     std::string name = convertToName(params[s_indexOfName]);
     DnaDataBase::updateName(name,cutSign(params[s_indexOfNewName]));

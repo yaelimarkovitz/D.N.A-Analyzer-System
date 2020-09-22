@@ -33,7 +33,7 @@ inline Load::~Load()
 inline std::string Load::execute(std::vector<std::string> params)
 {
     if  (params.size() < s_numOfParams)
-        return "sorry, but you enter too little params";
+        throw TooLittleParams();
 
     DnaInfo * m_seq;
     IReader* file_reader = new FileReader(params[s_indexOfFile]);

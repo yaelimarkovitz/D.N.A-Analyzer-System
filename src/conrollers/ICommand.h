@@ -9,6 +9,7 @@
 #include <vector>
 #include "../commands_module/name_genaration.h"
 #include "../dna_module/dna_data_base.h"
+#include "../myTools/too_little_params_exception.h"
 
 struct ICommand{
 

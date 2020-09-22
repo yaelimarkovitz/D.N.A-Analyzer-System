@@ -23,7 +23,7 @@ private:
 inline std::string Pair::execute(std::vector<std::string> params)
 {
     if (params.size() < s_nunOfParams)
-        return "sorry,but you enter too little params";
+        throw TooLittleParams();
 
     std::string name = convertToName(params[s_indexOfSeq]);
     DnaSequence pairSeq = DnaDataBase::findDna(name)->getDna().pair();

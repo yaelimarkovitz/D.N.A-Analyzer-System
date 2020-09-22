@@ -19,10 +19,10 @@ private:
     std::string     cutSign(const std::string& name);
 };
 
-inline std::string Show::execute(std::vector<std::string> params)
+inline std::string Show::execute(std::vector<std::string> params)//todo add param of num of characters
 {
     if (params.size() < s_nunOfParams)
-        return "sorry,but you enter too little params";
+        throw TooLittleParams();
 
     std::string name = convertToName(params[1]);
     return DnaDataBase::findDna(name)->getInfoWithStatus();

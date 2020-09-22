@@ -25,7 +25,7 @@ inline std::string Len::execute(std::vector<std::string> params)
 {
 
     if (params.size() < s_indexOfParmas)
-        return "sorry, but you enter too little params";
+        throw TooLittleParams();
 
 
     if (params[1][0] != s_idSign)

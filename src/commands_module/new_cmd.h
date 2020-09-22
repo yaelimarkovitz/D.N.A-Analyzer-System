@@ -32,7 +32,7 @@ inline New::~New()
 inline std::string New::execute(std::vector<std::string> params)
 {
     if  (params.size() < s_minNumOfParams)
-        return "sorry, but you enter too little params";
+        throw TooLittleParams();
 
     DnaInfo* seq;
 

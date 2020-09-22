@@ -27,7 +27,7 @@ private:
 inline std::string Count::execute(std::vector<std::string> params)
 {
     if (params.size() < s_numOfParams)
-        return "sorry,but you enter too little params";
+        throw TooLittleParams();
 
     std::string seq1 = convertToName(params[s_numofSeq1]);
 

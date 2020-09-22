@@ -41,12 +41,14 @@ inline void CommandLine::run(callBack exeFunc)
 {
     std::string command;
 
-    while (command != "quit")
+    while (true)
     {
         command = m_reader->read();
 
         if (command.empty())
             continue;
+        if (command=="quit")
+            break;
 
         ParamsList params = parseCommand(command);
         try
