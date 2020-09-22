@@ -98,8 +98,10 @@ inline const DnaSequence& DnaSequence:: operator=(const DnaSequence& d){
     copy(d);
     return *this;
 }
-inline std::ostream& operator<<(std::ostream& cout,const DnaSequence &d){
-    for (unsigned int i = 0; i < d.length(); ++i) {
+inline std::ostream& operator<<(std::ostream& cout,const DnaSequence &d)
+{
+    for (unsigned int i = 0; i < d.length(); ++i)
+    {
         cout<<d[i].getChar()<<"";
     }
     return cout;

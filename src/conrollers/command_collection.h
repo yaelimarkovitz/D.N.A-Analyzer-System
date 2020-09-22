@@ -40,7 +40,6 @@ inline std::map<std::string,ICommand*>  CommandCollection::initMap()
 {
     std::map<std::string,ICommand*> i;
     i["new"] = new New;
-    i["new"] = new New;
     i["load"] = new Load;
     i["save"] = new Save;
     i["slice"] = new Slice;

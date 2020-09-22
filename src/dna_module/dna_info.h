@@ -26,8 +26,8 @@ public:
     void                    updateDna( DnaSequence d);
     void                    updateName(const std::string& newName);
     void                    setStatus(status s);
-    std::string getInfo();
-    std::string getInfoWithStatus();
+    std::string             getInfo();
+    std::string             getInfoWithStatus(size_t numOfChars = 99);
 
 private:
 
@@ -83,17 +83,23 @@ inline std::string DnaInfo::getInfo()
     return "[" + ss.str()+ "] " + m_name + ": " + tmp;
 }
 
-inline std::string DnaInfo::getInfoWithStatus() //todo extract to other func
+inline std::string DnaInfo::getInfoWithStatus(size_t numOfChars) //todo extract to other func
 {
     std::ostringstream ss ;
     ss << m_id;
     std::string tmp;
     for (unsigned int i = 0; i < m_dna.length(); ++i)
     {
+        if (i == numOfChars)
+        {
+            tmp.push_back('\n');
+            numOfChars += numOfChars;
+        }
         tmp.push_back(m_dna[i].getChar());
     }
-    return "[" + ss.str()+ "] " + m_name + " "+ m_status[m_st] +" "+ tmp;
+    return "[" + ss.str()+ "] " + m_name + " "+ m_status[m_st] +"\n"+ tmp;
 }
+
 inline void DnaInfo::updateDna(DnaSequence d)
 {
     m_dna = d;
