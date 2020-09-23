@@ -9,6 +9,7 @@
 #include <map>
 #include "dna_info.h"
 #include "../myTools/not_found_exception.h"
+#include "../myTools/SharedPointer.h"
 
 
 class DnaDataBase{
@@ -17,6 +18,8 @@ public:
 
     typedef std::map <std::string , DnaInfo*>       MapNameToDna;
     typedef std::map<size_t , std::string>          MapIdToName;
+
+    typedef typename std::map <std::string , DnaInfo*>::iterator   MapNameToDnaIt;
 
     static MapNameToDna     createMap();
     static MapIdToName      createMapn();
@@ -27,6 +30,8 @@ public:
     static void                 setNewDna(DnaInfo* dna);
     static void                 updateDna (const std::string & name, DnaSequence d);
     static void                 updateName(const std::string& curName, const std::string& newName);
+
+    static std::vector<DnaInfo*>  getAllDna();
 
 
 private:
@@ -107,5 +112,15 @@ inline void DnaDataBase::updateName(const std::string &curName, const std::strin
     dnaList.erase(curName);
     dnaList[newName] = d;
     d->updateName(newName);
+}
+
+inline std::vector<DnaInfo*> DnaDataBase::getAllDna()
+{
+    std::vector<DnaInfo*> infoVec;
+    for (MapNameToDnaIt it = dnaList.begin(); it != dnaList.end(); ++it)
+    {
+        infoVec.push_back((*it).second);
+    }
+    return infoVec;
 }
 #endif //UNTITLED_DNA_DATA_BASE_H

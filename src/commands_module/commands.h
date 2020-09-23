@@ -16,4 +16,5 @@
 #include "rename.h"
 #include "pair.h"
 #include "show.h"
+#include "list.h"
 #endif //UNTITLED_COMMANDS_H

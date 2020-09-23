@@ -23,6 +23,7 @@ public:
     size_t                  getId() const;
     const std::string &     getNmae() const;
     DnaSequence             getDna() const ;
+    int                     getStatus()const;
     void                    updateDna( DnaSequence d);
     void                    updateName(const std::string& newName);
     void                    setStatus(status s);
@@ -59,6 +60,11 @@ inline size_t DnaInfo::getId() const
 inline const std::string & DnaInfo::getNmae() const
 {
     return m_name;
+}
+
+inline int DnaInfo::getStatus() const
+{
+    return m_st;
 }
 
 inline DnaSequence DnaInfo::getDna() const
