@@ -13,22 +13,32 @@
   <component name="ChangeListManager">
     <list default="true" id="e02a1b5d-6cda-4692-8351-fafdaffbd57f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SharedPointer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/myTools/SharedPointer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands_module/dup.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands_module/len.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands_module/len.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands_module/load.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands_module/load.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands_module/load.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands_module/new_cmd.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands_module/save.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands_module/save.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands_module/save.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands_module/slice.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands_module/slice.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/console_reader.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/myTools/readers/console_reader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dna_module/dna_data_base.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/dna_module/dna_data_base.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dna_module/dna_info.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/dna_module/dna_info.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/file_reader.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/myTools/readers/file_reader.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/file_writer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/file_writer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Icommand_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Icommand_line.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/02.rowdna" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/src/dna_module/dna_data_base.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/src/dna_module/dna_data_base.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/src/dna_module/dna_info.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/src/dna_module/dna_info.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/src/dna_module/dna_sequence.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/src/dna_module/dna_sequence.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dna_analyzer_project_y_c_mby.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dna_analyzer_project_y_c_mby" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dna_analyzer_project_y_c_mby" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/dna_analyzer_project_y_c_mby.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dna_analyzer_project_y_c_mby.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/m1.rowdna" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/my_first_seq2.rowdna" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/seq11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/seq11.rowdna" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/try.rowdna" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +48,20 @@
   </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
@@ -57,8 +81,9 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/myTools/writers" />
-      <recent name="$PROJECT_DIR$/src/myTools" />
       <recent name="$PROJECT_DIR$/src/myTools/readers" />
+      <recent name="$PROJECT_DIR$/src/internals" />
+      <recent name="$PROJECT_DIR$/src/myTools" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,7 +99,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="dna_analyzer_project_y_c_mby" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dna_analyzer_project_y_c_mby" TARGET_NAME="dna_analyzer_project_y_c_mby" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="dna_analyzer_project_y_c_mby" RUN_TARGET_NAME="dna_analyzer_project_y_c_mby">
+    <configuration name="dna_analyzer_project_y_c_mby" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/src" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="dna_analyzer_project_y_c_mby" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="dna_analyzer_project_y_c_mby">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -93,7 +118,8 @@
       <workItem from="1594736859921" duration="6171000" />
       <workItem from="1594745937886" duration="5869000" />
       <workItem from="1600238670133" duration="1693000" />
-      <workItem from="1600243775037" duration="12738000" />
+      <workItem from="1600243775037" duration="24362000" />
+      <workItem from="1600723498225" duration="13728000" />
     </task>
     <servers />
   </component>
