@@ -6,7 +6,7 @@
 #define UNTITLED_NEW_CMD_H
 
 #include <sstream>
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 #include "../dna_module/dna_info.h"
 #include "../dna_module/dna_data_base.h"
 

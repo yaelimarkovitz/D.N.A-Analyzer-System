@@ -4,7 +4,7 @@ project(src)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(commands_module)
-include_directories(conrollers)
+include_directories(controllers)
 include_directories(dna_module)
 include_directories(myTools)
 include_directories(myTools/readers)
@@ -28,10 +28,10 @@ add_executable(src
         commands_module/save.h
         commands_module/show.h
         commands_module/slice.h
-        conrollers/command_collection.cpp
-        conrollers/command_collection.h
-        conrollers/ICommand.h
-        conrollers/system_controller.h
+        controllers/command_collection.cpp
+        controllers/command_collection.h
+        controllers/ICommand.h
+        controllers/system_controller.h
         dna_module/dna_data_base.cpp
         dna_module/dna_data_base.h
         dna_module/dna_info.cpp
@@ -50,4 +50,4 @@ add_executable(src
         myTools/too_little_params_exception.h
         view/Icommand_line.h
         view/UI.h
-        main.cpp)
+        main.cpp commands_module/replace.h)

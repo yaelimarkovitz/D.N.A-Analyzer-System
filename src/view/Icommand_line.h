@@ -22,6 +22,7 @@ public:
     typedef std::vector <std::string> ParamsList;
 
     void            run(callBack exeFunc);
+    void            printStartMessage() const;
     ParamsList      parseCommand(const std::string& str);
 
 private:
@@ -39,6 +40,7 @@ inline CommandLine::~CommandLine()
 
 inline void CommandLine::run(callBack exeFunc)
 {
+    printStartMessage();
     std::string command;
 
     while (true)
@@ -59,7 +61,7 @@ inline void CommandLine::run(callBack exeFunc)
                 m_writer->write(output);
             }
         }
-        catch (exception& e)
+        catch (const exception& e)
         {
             m_writer->write(e.what());
         }
@@ -79,5 +81,9 @@ inline CommandLine::ParamsList CommandLine::parseCommand(const std::string &str)
 }
 
 
-
+inline void CommandLine::printStartMessage() const
+{
+    m_writer->write("Welcome to D.N.A Analyzer System\nhere some rules that helps you use this product\n1. Reference to the sequence number is done using th hash charcter : #\n"
+                    "2. Reference to the sequence name is done using th at charcter : @\n3 . To shut down the system use the command quit\n4. To get all the commands type help\nGood Luck:)");
+}
 #endif //UNTITLED_ICOMMANDLINE_H

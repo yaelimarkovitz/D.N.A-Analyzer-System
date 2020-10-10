@@ -5,7 +5,7 @@
 #ifndef UNTITLED_LOAD_H
 #define UNTITLED_LOAD_H
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 #include "../dna_module/dna_data_base.h"
 #include "../dna_module/dna_info.h"
 #include "../myTools/readers/file_reader.h"

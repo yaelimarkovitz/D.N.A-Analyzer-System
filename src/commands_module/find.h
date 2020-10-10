@@ -5,7 +5,7 @@
 #ifndef UNTITLED_FIND_H
 #define UNTITLED_FIND_H
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 
 class Find: public ICommand{
 public:

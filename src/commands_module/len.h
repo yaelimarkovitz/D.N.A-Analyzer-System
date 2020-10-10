@@ -8,7 +8,7 @@
 #include <cstdlib>
 #include <cstdio>
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 
 
 class Len : public ICommand{

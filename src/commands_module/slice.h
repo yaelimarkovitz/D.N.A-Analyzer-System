@@ -6,7 +6,7 @@
 #define UNTITLED_SLICE_H
 #include <cstdlib>
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 #include "../dna_module/dna_data_base.h"
 
 class Slice :public ICommand{

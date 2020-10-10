@@ -5,7 +5,7 @@
 #ifndef UNTITLED_CONCAT_H
 #define UNTITLED_CONCAT_H
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 
 class Concat :public ICommand{
 public:
@@ -80,7 +80,7 @@ inline std::string Concat::getName(const std::vector<std::string>& params)
         }
         return NameGeneration<Concat>::create("conseq_");
     }
-    return cutSign(params[s_index0fFirstSeq ]);
+    return cutSign(params.back());
 
 }
 

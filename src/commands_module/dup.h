@@ -5,7 +5,7 @@
 #ifndef UNTITLED_DUP_H
 #define UNTITLED_DUP_H
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 
 class Dup : public ICommand {
 public:

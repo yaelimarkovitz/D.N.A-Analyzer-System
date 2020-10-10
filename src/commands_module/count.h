@@ -5,7 +5,7 @@
 #ifndef UNTITLED_COUNT_H
 #define UNTITLED_COUNT_H
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 
 class Count: public ICommand{
 public:

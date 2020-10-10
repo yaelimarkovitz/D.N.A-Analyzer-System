@@ -57,18 +57,18 @@ include CMakeFiles/src.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/src.dir/flags.make
 
-CMakeFiles/src.dir/conrollers/command_collection.cpp.o: CMakeFiles/src.dir/flags.make
-CMakeFiles/src.dir/conrollers/command_collection.cpp.o: ../conrollers/command_collection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/src.dir/conrollers/command_collection.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/conrollers/command_collection.cpp.o -c /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.cpp
+CMakeFiles/src.dir/controllers/command_collection.cpp.o: CMakeFiles/src.dir/flags.make
+CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../controllers/command_collection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/src.dir/controllers/command_collection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/src.dir/controllers/command_collection.cpp.o -c /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.cpp
 
-CMakeFiles/src.dir/conrollers/command_collection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/conrollers/command_collection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.cpp > CMakeFiles/src.dir/conrollers/command_collection.cpp.i
+CMakeFiles/src.dir/controllers/command_collection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/controllers/command_collection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.cpp > CMakeFiles/src.dir/controllers/command_collection.cpp.i
 
-CMakeFiles/src.dir/conrollers/command_collection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/conrollers/command_collection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.cpp -o CMakeFiles/src.dir/conrollers/command_collection.cpp.s
+CMakeFiles/src.dir/controllers/command_collection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/controllers/command_collection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.cpp -o CMakeFiles/src.dir/controllers/command_collection.cpp.s
 
 CMakeFiles/src.dir/dna_module/dna_data_base.cpp.o: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/dna_module/dna_data_base.cpp.o: ../dna_module/dna_data_base.cpp
@@ -124,7 +124,7 @@ CMakeFiles/src.dir/main.cpp.s: cmake_force
 
 # Object files for target src
 src_OBJECTS = \
-"CMakeFiles/src.dir/conrollers/command_collection.cpp.o" \
+"CMakeFiles/src.dir/controllers/command_collection.cpp.o" \
 "CMakeFiles/src.dir/dna_module/dna_data_base.cpp.o" \
 "CMakeFiles/src.dir/dna_module/dna_info.cpp.o" \
 "CMakeFiles/src.dir/dna_module/dna_sequence.cpp.o" \
@@ -133,7 +133,7 @@ src_OBJECTS = \
 # External object files for target src
 src_EXTERNAL_OBJECTS =
 
-src: CMakeFiles/src.dir/conrollers/command_collection.cpp.o
+src: CMakeFiles/src.dir/controllers/command_collection.cpp.o
 src: CMakeFiles/src.dir/dna_module/dna_data_base.cpp.o
 src: CMakeFiles/src.dir/dna_module/dna_info.cpp.o
 src: CMakeFiles/src.dir/dna_module/dna_sequence.cpp.o

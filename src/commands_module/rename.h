@@ -5,7 +5,7 @@
 #ifndef UNTITLED_RENAME_H
 #define UNTITLED_RENAME_H
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 class Rename : public ICommand{
 public:
     ~Rename(){};

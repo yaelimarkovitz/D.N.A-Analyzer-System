@@ -5,7 +5,7 @@
 #ifndef UNTITLED_SHOW_H
 #define UNTITLED_SHOW_H
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 
 class Show : public ICommand{
 public:

@@ -123,32 +123,32 @@ src/fast:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/build
 .PHONY : src/fast
 
-conrollers/command_collection.o: conrollers/command_collection.cpp.o
+controllers/command_collection.o: controllers/command_collection.cpp.o
 
-.PHONY : conrollers/command_collection.o
+.PHONY : controllers/command_collection.o
 
 # target to build an object file
-conrollers/command_collection.cpp.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/conrollers/command_collection.cpp.o
-.PHONY : conrollers/command_collection.cpp.o
+controllers/command_collection.cpp.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/controllers/command_collection.cpp.o
+.PHONY : controllers/command_collection.cpp.o
 
-conrollers/command_collection.i: conrollers/command_collection.cpp.i
+controllers/command_collection.i: controllers/command_collection.cpp.i
 
-.PHONY : conrollers/command_collection.i
+.PHONY : controllers/command_collection.i
 
 # target to preprocess a source file
-conrollers/command_collection.cpp.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/conrollers/command_collection.cpp.i
-.PHONY : conrollers/command_collection.cpp.i
+controllers/command_collection.cpp.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/controllers/command_collection.cpp.i
+.PHONY : controllers/command_collection.cpp.i
 
-conrollers/command_collection.s: conrollers/command_collection.cpp.s
+controllers/command_collection.s: controllers/command_collection.cpp.s
 
-.PHONY : conrollers/command_collection.s
+.PHONY : controllers/command_collection.s
 
 # target to generate assembly for a file
-conrollers/command_collection.cpp.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/conrollers/command_collection.cpp.s
-.PHONY : conrollers/command_collection.cpp.s
+controllers/command_collection.cpp.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/controllers/command_collection.cpp.s
+.PHONY : controllers/command_collection.cpp.s
 
 dna_module/dna_data_base.o: dna_module/dna_data_base.cpp.o
 
@@ -267,9 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... src"
 	@echo "... edit_cache"
-	@echo "... conrollers/command_collection.o"
-	@echo "... conrollers/command_collection.i"
-	@echo "... conrollers/command_collection.s"
+	@echo "... controllers/command_collection.o"
+	@echo "... controllers/command_collection.i"
+	@echo "... controllers/command_collection.s"
 	@echo "... dna_module/dna_data_base.o"
 	@echo "... dna_module/dna_data_base.i"
 	@echo "... dna_module/dna_data_base.s"

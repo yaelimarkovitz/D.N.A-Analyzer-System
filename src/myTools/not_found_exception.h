@@ -13,6 +13,6 @@ class NotExists : public std::exception{
 
 inline const char* NotExists::what() const throw()
 {
-    return "sorry, this dna not exists please try again";
+    return "Sorry, this dna not exists please try again \nPlease check if you type the feet sign";
 }
 #endif //UNTITLED_NOT_FOUND_EXCEPTION_H

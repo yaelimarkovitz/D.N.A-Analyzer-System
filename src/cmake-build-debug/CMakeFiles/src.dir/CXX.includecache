@@ -35,36 +35,36 @@ concat.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/concat.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/concat.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/count.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find_all.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/len.h
 cstdlib
 -
 cstdio
 -
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/list.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/load.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.h
 ../dna_module/dna_info.h
@@ -79,26 +79,26 @@ string
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/new_cmd.h
 sstream
 -
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 ../dna_module/dna_info.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_info.h
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/pair.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/rename.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/save.h
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 ../myTools/writers/file_writer.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/file_writer.h
 iostream
@@ -107,18 +107,18 @@ cstdlib
 -
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/show.h
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/slice.h
 cstdlib
 -
-../conrollers/ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.h
 
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 string
 -
 vector
@@ -130,25 +130,21 @@ vector
 ../myTools/too_little_params_exception.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/too_little_params_exception.h
 
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.cpp
-command_collection.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.h
-
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.h
 map
 -
 ICommand.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h
 ../commands_module/commands.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/commands.h
 
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/system_controller.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/system_controller.h
 iostream
 -
 ../view/UI.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/view/UI.h
 command_collection.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.h
 ../myTools/writers/IWrither.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/IWrither.h
 ../myTools/readers/IReader.h
@@ -205,8 +201,8 @@ myTools/readers/console_reader.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/console_reader.h
 myTools/writers/console_writher.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/console_writher.h
-conrollers/system_controller.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/system_controller.h
+controllers/system_controller.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/system_controller.h
 view/Icommand_line.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/view/Icommand_line.h
 

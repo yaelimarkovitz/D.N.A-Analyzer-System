@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/view 
+CXX_INCLUDES = -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers -I/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/view 
 

@@ -5,7 +5,7 @@
 #ifndef UNTITLED_FIND_ALL_H
 #define UNTITLED_FIND_ALL_H
 
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 
 class FindAll: public ICommand{
 public:
@@ -64,7 +64,8 @@ inline std::string FindAll::convertToName(const std::string &seq)
     return cutSign(seq);
 }
 
-inline bool FindAll::isSign(const std::string & seq) {
+inline bool FindAll::isSign(const std::string & seq)
+{
     return seq[0]==s_idSign || seq[0] == s_nameSign;
 }
 

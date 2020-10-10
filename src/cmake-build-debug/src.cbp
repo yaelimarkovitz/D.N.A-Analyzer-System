@@ -35,7 +35,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module"/>
-					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers"/>
 					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module"/>
 					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools"/>
 					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers"/>
@@ -65,7 +65,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module"/>
-					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers"/>
+					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers"/>
 					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module"/>
 					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools"/>
 					<Add directory="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers"/>
@@ -137,6 +137,9 @@
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/rename.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/replace.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/save.h">
 			<Option target="src"/>
 		</Unit>
@@ -146,16 +149,16 @@
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/slice.h">
 			<Option target="src"/>
 		</Unit>
-		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h">
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/ICommand.h">
 			<Option target="src"/>
 		</Unit>
-		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.cpp">
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.cpp">
 			<Option target="src"/>
 		</Unit>
-		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.h">
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.h">
 			<Option target="src"/>
 		</Unit>
-		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/system_controller.h">
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/system_controller.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_data_base.cpp">

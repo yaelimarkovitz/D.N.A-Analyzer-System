@@ -4,7 +4,7 @@
 
 #ifndef UNTITLED_PAIR_H
 #define UNTITLED_PAIR_H
-#include "../conrollers/ICommand.h"
+#include "../controllers/ICommand.h"
 
 class Pair :public ICommand{
 public:
