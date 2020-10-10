@@ -17,4 +17,5 @@
 #include "pair.h"
 #include "show.h"
 #include "list.h"
+#include "concat.h"
 #endif //UNTITLED_COMMANDS_H

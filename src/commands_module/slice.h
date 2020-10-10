@@ -48,8 +48,7 @@ inline std::string Slice::execute(std::vector<std::string> params)
 
 }
 
-inline std::string
-Slice::provideNewSeq(std::vector<std::string> params, const DnaSequence &sliceSeq, const std::string &name)
+inline std::string Slice::provideNewSeq(std::vector<std::string> params, const DnaSequence &sliceSeq, const std::string &name)
 {
 
     DnaInfo * newSeq = new DnaInfo(sliceSeq,getName(params,name));

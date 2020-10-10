@@ -51,6 +51,7 @@ inline std::map<std::string,ICommand*>  CommandCollection::initMap()
     i["pair"] = new Pair;
     i["show"] = new Show;
     i["list"] = new List;
+    i["concat"] = new Concat;
     return i;
 }
 #endif //UNTITLED_COMMAND_COLLECTION_H

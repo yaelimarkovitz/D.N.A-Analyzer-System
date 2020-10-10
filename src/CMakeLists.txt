@@ -13,6 +13,7 @@ include_directories(view)
 
 add_executable(src
         commands_module/commands.h
+        commands_module/concat.h
         commands_module/count.h
         commands_module/dup.h
         commands_module/find.h
@@ -25,6 +26,7 @@ add_executable(src
         commands_module/pair.h
         commands_module/rename.h
         commands_module/save.h
+        commands_module/show.h
         commands_module/slice.h
         conrollers/command_collection.cpp
         conrollers/command_collection.h
@@ -45,6 +47,7 @@ add_executable(src
         myTools/writers/IWrither.h
         myTools/not_found_exception.h
         myTools/SharedPointer.h
+        myTools/too_little_params_exception.h
         view/Icommand_line.h
         view/UI.h
         main.cpp)

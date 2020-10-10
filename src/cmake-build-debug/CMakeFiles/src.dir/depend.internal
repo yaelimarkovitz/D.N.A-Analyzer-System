@@ -3,16 +3,19 @@
 
 CMakeFiles/src.dir/conrollers/command_collection.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/commands.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/concat.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/count.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find_all.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/len.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/list.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/load.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/name_genaration.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/new_cmd.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/pair.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/rename.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/save.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/show.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/slice.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.cpp
@@ -21,9 +24,11 @@ CMakeFiles/src.dir/conrollers/command_collection.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_info.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_sequence.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/my_exception.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/not_found_exception.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/IReader.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/file_reader.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/too_little_params_exception.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/IWrither.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/file_writer.h
 CMakeFiles/src.dir/dna_module/dna_data_base.cpp.o
@@ -32,6 +37,7 @@ CMakeFiles/src.dir/dna_module/dna_data_base.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_info.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_sequence.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/my_exception.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/not_found_exception.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/IReader.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/IWrither.h
@@ -50,16 +56,19 @@ CMakeFiles/src.dir/dna_module/dna_sequence.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/IWrither.h
 CMakeFiles/src.dir/main.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/commands.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/concat.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/count.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/find_all.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/len.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/list.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/load.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/name_genaration.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/new_cmd.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/pair.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/rename.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/save.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/show.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/slice.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/ICommand.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/conrollers/command_collection.h
@@ -69,10 +78,12 @@ CMakeFiles/src.dir/main.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/dna_sequence.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/dna_module/my_exception.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/main.cpp
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/not_found_exception.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/IReader.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/console_reader.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/file_reader.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/too_little_params_exception.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/IWrither.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/console_writher.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/file_writer.h

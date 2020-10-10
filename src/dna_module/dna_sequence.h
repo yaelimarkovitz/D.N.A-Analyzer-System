@@ -43,6 +43,7 @@ public:
     DnaSequence(IReader*);
 
     const DnaSequence&      operator=(const DnaSequence& d);
+    const DnaSequence&      operator+=(DnaSequence& d);
     const size_t            length() const;
     bool                    compare(const DnaSequence& d) const;
     const Nucleotide&       operator[]( size_t index) const ;
@@ -98,6 +99,26 @@ inline const DnaSequence& DnaSequence:: operator=(const DnaSequence& d){
     copy(d);
     return *this;
 }
+
+inline const DnaSequence& DnaSequence::operator+=(DnaSequence &d)
+{
+    Nucleotide * new_seq = new Nucleotide[m_length_dna+d.length()];
+
+    for (int i = 0; i < m_length_dna; ++i)
+    {
+        new_seq[i] = m_dna_seq[i];
+    }
+    for (int j = 0; j < d.length(); ++j)
+    {
+        new_seq[m_length_dna+j] = d[j];
+    }
+
+    m_length_dna += d.length();
+    delete m_dna_seq;
+    m_dna_seq = new_seq;
+    return *this;
+
+}
 inline std::ostream& operator<<(std::ostream& cout,const DnaSequence &d)
 {
     for (unsigned int i = 0; i < d.length(); ++i)
@@ -147,6 +168,12 @@ inline std::string DnaSequence::toStr() const {
     return tmp;
 }
 
+inline DnaSequence operator+(const DnaSequence& d1, const DnaSequence& d2)
+{
+    DnaSequence newDna = d1;
+    newDna += const_cast< DnaSequence& >(d2);
+    return newDna;
+}
 ////////nuclutide class/////////////////////////////
 inline char DnaSequence::Nucleotide::getChar() const
 {

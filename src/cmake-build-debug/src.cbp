@@ -101,6 +101,9 @@
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/commands.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/concat.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/count.h">
 			<Option target="src"/>
 		</Unit>
@@ -135,6 +138,9 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/save.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/show.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/commands_module/slice.h">
@@ -189,6 +195,9 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/file_reader.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/too_little_params_exception.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/writers/IWrither.h">
