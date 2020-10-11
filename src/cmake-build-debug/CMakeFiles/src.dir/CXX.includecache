@@ -18,10 +18,6 @@ vector
 ../myTools/too_little_params_exception.h
 ../myTools/too_little_params_exception.h
 
-../myTools/SharedPointer.h
-cstddef
--
-
 ../myTools/not_found_exception.h
 exception
 -
@@ -75,6 +71,8 @@ ICommand.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/commands.h
 ../myTools/not_found_command.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/not_found_command.h
+../myTools/SharedPointer.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/system_controller.h
 iostream
@@ -254,6 +252,10 @@ my_exception.h
 exception
 -
 iostream
+-
+
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h
+cstddef
 -
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/not_found_command.h

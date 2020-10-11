@@ -31,6 +31,7 @@ inline New::~New()
 
 inline std::string New::execute(std::vector<std::string> params)
 {
+
     if  (params.size() < s_minNumOfParams)
         throw TooLittleParams();
 

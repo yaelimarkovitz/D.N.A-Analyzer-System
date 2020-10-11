@@ -13,7 +13,7 @@ public:
     explicit SharedPointer(T* ptr = NULL);
     ~SharedPointer();
 
-    T*	operator*();
+    T&	operator*();
     T*  operator->();
 
     T* 			    getPtr() const;
@@ -28,18 +28,20 @@ public:
     bool    		operator!=(const SharedPointer& other)const ;
 
 private:
-    T* 		m_ptr;
+    T* 		    m_ptr;
     size_t* 	m_count;
-    bool 	isMoreThanOnePinter() const ;
+    bool 	    isMoreThanOnePinter() const ;
 };
 template <typename T>
-inline SharedPointer<T>::SharedPointer(T *ptr):m_ptr(ptr),m_count(new size_t(1)) 
-{
-}
+inline SharedPointer<T>::SharedPointer(T *ptr):
+                m_ptr(ptr),
+                m_count(new size_t(1))
+{}
 template <typename T>
 template <typename U>
-inline SharedPointer<T>::SharedPointer(const SharedPointer<U> &other):m_ptr(other.getPtr())
-								     ,m_count(other.getCount()) 
+inline SharedPointer<T>::SharedPointer(const SharedPointer<U> &other):
+                                        m_ptr(other.getPtr()),
+                                        m_count(other.getCount())
 {
     (*m_count)++;
 }
@@ -51,7 +53,7 @@ SharedPointer<T>& SharedPointer<T>::operator=(const SharedPointer<U> &other)
     delete m_ptr;
     m_ptr = other.getPtr();
     (*m_count)--;
-    m_count=other.getCount();
+    m_count= const_cast<size_t *>(other.getCount());
     (*m_count)++;
     return *this;
 }
@@ -73,9 +75,9 @@ bool SharedPointer<T>::isMoreThanOnePinter() const
     return ((*m_count)>1);
 }
 template <typename T>
-T* SharedPointer<T>::operator*()
+T& SharedPointer<T>::operator*()
 {
-    return m_ptr;
+    return *m_ptr;
 }
 template <typename T>
 bool SharedPointer<T>::operator==(const SharedPointer &other)const 

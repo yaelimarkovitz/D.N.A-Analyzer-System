@@ -42,7 +42,7 @@ inline std::string Concat::provideNewSeq(const std::vector<std::string> &params)
 
     SharedPointer<DnaSequence> conSeq = concatAllSeqs(params,params.size()-3);
 
-    DnaInfo* newSeq = new DnaInfo(**conSeq,getName(params)) ;
+    DnaInfo* newSeq = new DnaInfo(*conSeq,getName(params)) ;
     DnaDataBase::setNewDna(newSeq);
 
     return newSeq->getInfo();
@@ -53,7 +53,7 @@ inline std::string Concat::changeCurrSeq(const std::vector<std::string> &params)
     SharedPointer<DnaSequence> conSeq = concatAllSeqs(params,params.size()-1);
 
     DnaInfo * changeSeq = DnaDataBase::findDna(convertToName(params[s_index0fFirstSeq]));
-    DnaDataBase::updateDna(convertToName(params[s_index0fFirstSeq]),**conSeq );
+    DnaDataBase::updateDna(convertToName(params[s_index0fFirstSeq]),*conSeq );
 
     return changeSeq->getInfo();
 }
@@ -107,7 +107,7 @@ inline SharedPointer<DnaSequence> Concat::concatAllSeqs(const std::vector<std::s
     for (int i = s_index0fFirstSeq; i < size; ++i)
     {
         tmp = DnaDataBase::findDna(convertToName(params[i+1]))->getDna();
-        *(*newSeq) += tmp;
+        *(newSeq) += tmp;
     }
     return newSeq;
 }

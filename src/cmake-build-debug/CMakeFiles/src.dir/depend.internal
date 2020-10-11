@@ -3,7 +3,6 @@
 
 CMakeFiles/src.dir/controllers/command_collection.cpp.o
  ../controllers/ICommand.h
- ../myTools/SharedPointer.h
  ../myTools/not_found_exception.h
  ../myTools/readers/IReader.h
  ../myTools/readers/file_reader.h
@@ -31,11 +30,11 @@ CMakeFiles/src.dir/controllers/command_collection.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_info.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_sequence.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/my_exception.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/not_found_command.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/too_little_params_exception.h
 CMakeFiles/src.dir/main.cpp.o
  ../controllers/ICommand.h
- ../myTools/SharedPointer.h
  ../myTools/not_found_exception.h
  ../myTools/readers/file_reader.h
  ../myTools/writers/file_writer.h
@@ -62,6 +61,7 @@ CMakeFiles/src.dir/main.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_info.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_sequence.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/my_exception.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/not_found_command.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/IReader.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/readers/console_reader.h

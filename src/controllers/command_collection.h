@@ -9,14 +9,16 @@
 #include "ICommand.h"
 #include "../model/commands_module/commands.h"
 #include "../myTools/not_found_command.h"
+#include "../myTools/SharedPointer.h"
 
 class CommandCollection {
 
 public:
+    typedef std::map<std::string ,SharedPointer<ICommand>>  CommandsMap;
 
-    static ICommand* getCmd(const std::string& name);
-    static std::map<std::string,ICommand*> m_commandList;
-    static std::map<std::string,ICommand*> initMap();
+    static ICommand*        getCmd(const std::string& name);
+    static  CommandsMap     m_commandList;
+    static  CommandsMap     initMap();
 };
 
 //inline CommandCollection::~CommandCollection()
@@ -33,26 +35,26 @@ inline ICommand* CommandCollection::getCmd(const std::string &name)
     {
         throw NotFoundCommand();
     }
-    return m_commandList[name];
+    return (m_commandList[name]).getPtr();
 
 }
 
-inline std::map<std::string,ICommand*>  CommandCollection::initMap()
+inline CommandCollection::CommandsMap  CommandCollection::initMap()
 {
-    std::map<std::string,ICommand*> i;
-    i["new"] = new New;
-    i["load"] = new Load;
-    i["save"] = new Save;
-    i["slice"] = new Slice;
-    i["len"] = new Len;
-    i["find"] = new Find;
-    i["findall"] = new FindAll;
-    i["count"] = new Count;
-    i["rename"] = new Rename;
-    i["pair"] = new Pair;
-    i["show"] = new Show;
-    i["list"] = new List;
-    i["concat"] = new Concat;
+    CommandsMap i;
+    i["new"]=  SharedPointer<New>(new New);
+    i["load"] = SharedPointer<Load>(new Load);
+    i["save"] = SharedPointer<Save>(new Save);
+    i["slice"] = SharedPointer<Slice>(new Slice);
+    i["len"] = SharedPointer<Len>(new Len);
+    i["find"] = SharedPointer<Find>( new Find);
+    i["findall"] = SharedPointer<FindAll>(new FindAll);
+    i["count"] = SharedPointer<Count>(new Count);
+    i["rename"] = SharedPointer<Rename>(new Rename);
+    i["pair"] = SharedPointer<Pair>(new Pair);
+    i["show"] = SharedPointer<Show>(new Show);
+    i["list"] = SharedPointer<List>(new List);
+    i["concat"] = SharedPointer<Concat>(new Concat);
     return i;
 }
 #endif //UNTITLED_COMMAND_COLLECTION_H
