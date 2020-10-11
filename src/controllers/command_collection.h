@@ -7,7 +7,8 @@
 
 #include <map>
 #include "ICommand.h"
-#include "../commands_module/commands.h"
+#include "../model/commands_module/commands.h"
+#include "../myTools/not_found_command.h"
 
 class CommandCollection {
 
@@ -30,7 +31,7 @@ inline ICommand* CommandCollection::getCmd(const std::string &name)
 {
     if(m_commandList.find(name)==m_commandList.end())
     {
-        return NULL;
+        throw NotFoundCommand();
     }
     return m_commandList[name];
 

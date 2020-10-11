@@ -14,7 +14,7 @@ class TooLittleParams : public std::exception{
 
 inline const char* TooLittleParams::what() const throw()
 {
-    return "sorry,but you enter too little params";;
+    return "Sorry,but you enter too little params";;
 }
 
 #endif //UNTITLED_TOO_LITTLE_PARAMS_EXCEPTION_H

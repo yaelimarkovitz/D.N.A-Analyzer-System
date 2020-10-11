@@ -14,6 +14,7 @@ int main(){
     SystemController mySystem(CLI);
     mySystem.run();
 
+    delete CLI;
     delete writer;
     delete reader;
 

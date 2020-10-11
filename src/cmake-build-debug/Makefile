@@ -150,87 +150,6 @@ controllers/command_collection.cpp.s:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/controllers/command_collection.cpp.s
 .PHONY : controllers/command_collection.cpp.s
 
-dna_module/dna_data_base.o: dna_module/dna_data_base.cpp.o
-
-.PHONY : dna_module/dna_data_base.o
-
-# target to build an object file
-dna_module/dna_data_base.cpp.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_data_base.cpp.o
-.PHONY : dna_module/dna_data_base.cpp.o
-
-dna_module/dna_data_base.i: dna_module/dna_data_base.cpp.i
-
-.PHONY : dna_module/dna_data_base.i
-
-# target to preprocess a source file
-dna_module/dna_data_base.cpp.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_data_base.cpp.i
-.PHONY : dna_module/dna_data_base.cpp.i
-
-dna_module/dna_data_base.s: dna_module/dna_data_base.cpp.s
-
-.PHONY : dna_module/dna_data_base.s
-
-# target to generate assembly for a file
-dna_module/dna_data_base.cpp.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_data_base.cpp.s
-.PHONY : dna_module/dna_data_base.cpp.s
-
-dna_module/dna_info.o: dna_module/dna_info.cpp.o
-
-.PHONY : dna_module/dna_info.o
-
-# target to build an object file
-dna_module/dna_info.cpp.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_info.cpp.o
-.PHONY : dna_module/dna_info.cpp.o
-
-dna_module/dna_info.i: dna_module/dna_info.cpp.i
-
-.PHONY : dna_module/dna_info.i
-
-# target to preprocess a source file
-dna_module/dna_info.cpp.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_info.cpp.i
-.PHONY : dna_module/dna_info.cpp.i
-
-dna_module/dna_info.s: dna_module/dna_info.cpp.s
-
-.PHONY : dna_module/dna_info.s
-
-# target to generate assembly for a file
-dna_module/dna_info.cpp.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_info.cpp.s
-.PHONY : dna_module/dna_info.cpp.s
-
-dna_module/dna_sequence.o: dna_module/dna_sequence.cpp.o
-
-.PHONY : dna_module/dna_sequence.o
-
-# target to build an object file
-dna_module/dna_sequence.cpp.o:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_sequence.cpp.o
-.PHONY : dna_module/dna_sequence.cpp.o
-
-dna_module/dna_sequence.i: dna_module/dna_sequence.cpp.i
-
-.PHONY : dna_module/dna_sequence.i
-
-# target to preprocess a source file
-dna_module/dna_sequence.cpp.i:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_sequence.cpp.i
-.PHONY : dna_module/dna_sequence.cpp.i
-
-dna_module/dna_sequence.s: dna_module/dna_sequence.cpp.s
-
-.PHONY : dna_module/dna_sequence.s
-
-# target to generate assembly for a file
-dna_module/dna_sequence.cpp.s:
-	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/dna_module/dna_sequence.cpp.s
-.PHONY : dna_module/dna_sequence.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -258,6 +177,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+model/dna_module/dna_data_base.o: model/dna_module/dna_data_base.cpp.o
+
+.PHONY : model/dna_module/dna_data_base.o
+
+# target to build an object file
+model/dna_module/dna_data_base.cpp.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_data_base.cpp.o
+.PHONY : model/dna_module/dna_data_base.cpp.o
+
+model/dna_module/dna_data_base.i: model/dna_module/dna_data_base.cpp.i
+
+.PHONY : model/dna_module/dna_data_base.i
+
+# target to preprocess a source file
+model/dna_module/dna_data_base.cpp.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_data_base.cpp.i
+.PHONY : model/dna_module/dna_data_base.cpp.i
+
+model/dna_module/dna_data_base.s: model/dna_module/dna_data_base.cpp.s
+
+.PHONY : model/dna_module/dna_data_base.s
+
+# target to generate assembly for a file
+model/dna_module/dna_data_base.cpp.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_data_base.cpp.s
+.PHONY : model/dna_module/dna_data_base.cpp.s
+
+model/dna_module/dna_info.o: model/dna_module/dna_info.cpp.o
+
+.PHONY : model/dna_module/dna_info.o
+
+# target to build an object file
+model/dna_module/dna_info.cpp.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_info.cpp.o
+.PHONY : model/dna_module/dna_info.cpp.o
+
+model/dna_module/dna_info.i: model/dna_module/dna_info.cpp.i
+
+.PHONY : model/dna_module/dna_info.i
+
+# target to preprocess a source file
+model/dna_module/dna_info.cpp.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_info.cpp.i
+.PHONY : model/dna_module/dna_info.cpp.i
+
+model/dna_module/dna_info.s: model/dna_module/dna_info.cpp.s
+
+.PHONY : model/dna_module/dna_info.s
+
+# target to generate assembly for a file
+model/dna_module/dna_info.cpp.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_info.cpp.s
+.PHONY : model/dna_module/dna_info.cpp.s
+
+model/dna_module/dna_sequence.o: model/dna_module/dna_sequence.cpp.o
+
+.PHONY : model/dna_module/dna_sequence.o
+
+# target to build an object file
+model/dna_module/dna_sequence.cpp.o:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_sequence.cpp.o
+.PHONY : model/dna_module/dna_sequence.cpp.o
+
+model/dna_module/dna_sequence.i: model/dna_module/dna_sequence.cpp.i
+
+.PHONY : model/dna_module/dna_sequence.i
+
+# target to preprocess a source file
+model/dna_module/dna_sequence.cpp.i:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_sequence.cpp.i
+.PHONY : model/dna_module/dna_sequence.cpp.i
+
+model/dna_module/dna_sequence.s: model/dna_module/dna_sequence.cpp.s
+
+.PHONY : model/dna_module/dna_sequence.s
+
+# target to generate assembly for a file
+model/dna_module/dna_sequence.cpp.s:
+	$(MAKE) -f CMakeFiles/src.dir/build.make CMakeFiles/src.dir/model/dna_module/dna_sequence.cpp.s
+.PHONY : model/dna_module/dna_sequence.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -270,18 +270,18 @@ help:
 	@echo "... controllers/command_collection.o"
 	@echo "... controllers/command_collection.i"
 	@echo "... controllers/command_collection.s"
-	@echo "... dna_module/dna_data_base.o"
-	@echo "... dna_module/dna_data_base.i"
-	@echo "... dna_module/dna_data_base.s"
-	@echo "... dna_module/dna_info.o"
-	@echo "... dna_module/dna_info.i"
-	@echo "... dna_module/dna_info.s"
-	@echo "... dna_module/dna_sequence.o"
-	@echo "... dna_module/dna_sequence.i"
-	@echo "... dna_module/dna_sequence.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... model/dna_module/dna_data_base.o"
+	@echo "... model/dna_module/dna_data_base.i"
+	@echo "... model/dna_module/dna_data_base.s"
+	@echo "... model/dna_module/dna_info.o"
+	@echo "... model/dna_module/dna_info.i"
+	@echo "... model/dna_module/dna_info.s"
+	@echo "... model/dna_module/dna_sequence.o"
+	@echo "... model/dna_module/dna_sequence.i"
+	@echo "... model/dna_module/dna_sequence.s"
 .PHONY : help
 
 

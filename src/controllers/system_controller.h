@@ -52,7 +52,7 @@ inline void SystemController::initSystem()
 inline void SystemController::run()
 {
     callBack funcToExe = makeCallBack;
-    m_userView->run( funcToExe );
+    m_userView-> run( funcToExe );
     quitSystem();
 }
 

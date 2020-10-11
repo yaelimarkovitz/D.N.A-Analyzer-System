@@ -15,7 +15,6 @@ class CommandLine : public UI{
 
 public:
 
-
     CommandLine(IWriter*, IReader*);
     ~CommandLine();
 
