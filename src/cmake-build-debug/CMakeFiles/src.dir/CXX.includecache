@@ -18,6 +18,10 @@ vector
 ../myTools/too_little_params_exception.h
 ../myTools/too_little_params_exception.h
 
+../myTools/SharedPointer.h
+cstddef
+-
+
 ../myTools/not_found_exception.h
 exception
 -
@@ -208,6 +212,10 @@ cstdlib
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
 
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.cpp
+dna_data_base.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
+
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
 string
 -
@@ -220,6 +228,10 @@ dna_info.h
 ../myTools/SharedPointer.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/myTools/SharedPointer.h
 
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_info.cpp
+dna_info.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_info.h
+
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_info.h
 string
 -
@@ -227,6 +239,16 @@ sstream
 -
 dna_sequence.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_sequence.h
+
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_sequence.cpp
+dna_sequence.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_sequence.h
+iostream
+-
+fstream
+-
+bits/stdc++.h
+-
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_sequence.h
 cstring
