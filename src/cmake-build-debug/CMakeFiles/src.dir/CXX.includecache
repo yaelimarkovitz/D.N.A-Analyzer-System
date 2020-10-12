@@ -18,10 +18,6 @@ vector
 ../myTools/too_little_params_exception.h
 ../myTools/too_little_params_exception.h
 
-../myTools/SharedPointer.h
-cstddef
--
-
 ../myTools/not_found_exception.h
 exception
 -
@@ -127,6 +123,8 @@ list.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/list.h
 concat.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/concat.h
+replace.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/replace.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/concat.h
 ../controllers/ICommand.h
@@ -188,6 +186,12 @@ sstream
 ../controllers/ICommand.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/controllers/ICommand.h
 
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/replace.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/controllers/ICommand.h
+../dna_module/dna_data_base.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
+
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/save.h
 ../dna_module/dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
@@ -210,10 +214,6 @@ cstdlib
 ../controllers/ICommand.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/controllers/ICommand.h
 ../dna_module/dna_data_base.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
-
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.cpp
-dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h

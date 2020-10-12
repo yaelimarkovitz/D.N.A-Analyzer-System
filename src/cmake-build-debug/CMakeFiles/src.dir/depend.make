@@ -22,6 +22,7 @@ CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../model/commands_modul
 CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../model/commands_module/new_cmd.h
 CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../model/commands_module/pair.h
 CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../model/commands_module/rename.h
+CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../model/commands_module/replace.h
 CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../model/commands_module/save.h
 CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../model/commands_module/show.h
 CMakeFiles/src.dir/controllers/command_collection.cpp.o: ../model/commands_module/slice.h
@@ -53,6 +54,7 @@ CMakeFiles/src.dir/main.cpp.o: ../model/commands_module/name_genaration.h
 CMakeFiles/src.dir/main.cpp.o: ../model/commands_module/new_cmd.h
 CMakeFiles/src.dir/main.cpp.o: ../model/commands_module/pair.h
 CMakeFiles/src.dir/main.cpp.o: ../model/commands_module/rename.h
+CMakeFiles/src.dir/main.cpp.o: ../model/commands_module/replace.h
 CMakeFiles/src.dir/main.cpp.o: ../model/commands_module/save.h
 CMakeFiles/src.dir/main.cpp.o: ../model/commands_module/show.h
 CMakeFiles/src.dir/main.cpp.o: ../model/commands_module/slice.h

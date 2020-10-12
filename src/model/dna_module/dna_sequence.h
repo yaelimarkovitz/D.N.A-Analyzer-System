@@ -48,7 +48,8 @@ public:
     bool                    compare(const DnaSequence& d) const;
     const Nucleotide&       operator[]( size_t index) const ;
     Nucleotide&             operator[]( size_t index);
-    DnaSequence             slice(int start,int end);//todo throw exeption if the indexes out of range
+    DnaSequence             slice(int start,int end);
+    void                    replace(int index, char letter);
     DnaSequence             pair() const ;
     int                     find(const DnaSequence d)const ;
     int                     count(const DnaSequence d)const ;

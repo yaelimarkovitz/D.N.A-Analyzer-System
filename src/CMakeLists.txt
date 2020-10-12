@@ -46,9 +46,10 @@ add_executable(src
         myTools/writers/console_writher.h
         myTools/writers/file_writer.h
         myTools/writers/IWrither.h
+        myTools/not_found_command.h
         myTools/not_found_exception.h
         myTools/SharedPointer.h
         myTools/too_little_params_exception.h
         view/Icommand_line.h
         view/UI.h
-        main.cpp myTools/not_found_command.h)
+        main.cpp)
