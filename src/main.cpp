@@ -6,7 +6,8 @@
 #include "controllers/system_controller.h"
 #include "view/Icommand_line.h"
 
-int main(){
+int main()
+{
     IWriter*  writer= new ConsoleWriter;
     IReader* reader = new ConsoleReader;
     UI * CLI = new CommandLine(writer, reader);

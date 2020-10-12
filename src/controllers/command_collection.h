@@ -14,7 +14,7 @@
 class CommandCollection {
 
 public:
-    typedef std::map<std::string ,SharedPointer<ICommand>>  CommandsMap;
+    typedef std::map<std::string ,SharedPointer<ICommand> >  CommandsMap;
 
     static ICommand*        getCmd(const std::string& name);
     static  CommandsMap     m_commandList;

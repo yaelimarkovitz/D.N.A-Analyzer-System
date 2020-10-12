@@ -10,21 +10,20 @@
 
 class Replace :public ICommand{
 public:
-    ~Replace() override{};
-    /*virtual*/std::string execute(std::vector<std::string> params) override;
+    ~Replace() {};
+    /*virtual*/std::string execute(std::vector<std::string> params);
 
 private:
     static const int    s_minNumOfParams = 4;
     static const int    s_indexOfSeq = 1;
 
-    std::string     cutSign(const std::string& name);
-    std::string     convertToName(const std::string &seq);
-    std::string     provideNewSeq(const std::vector<std::string> &params);
-    std::string     changeCurrSeq(const std::vector<std::string> &params);
-    std::string     getName(const std::vector<std::string>& params);
-    bool            isProvideNewSeq(const std::vector<std::string> &params);
+    static std::string     cutSign(const std::string& name);
+    static std::string     convertToName(const std::string &seq);
+    static std::string     provideNewSeq(const std::vector<std::string> &params);
+    static std::string     changeCurrSeq(const std::vector<std::string> &params);
+    static std::string     getName(const std::vector<std::string>& params);
+    static bool            isProvideNewSeq(const std::vector<std::string> &params);
 
-    SharedPointer<DnaSequence> concatAllSeqs(const std::vector<std::string> &params, int size);
 };
 
 inline  std::string Replace::execute(std::vector<std::string> params) 
@@ -57,7 +56,7 @@ inline std::string Replace::provideNewSeq(const std::vector<std::string> &params
     DnaInfo* currSeq = DnaDataBase::findDna(convertToName(params[s_indexOfSeq]));
     DnaSequence seq = currSeq->getDna();
 
-    for (int i = s_indexOfSeq+1; i < params.size()-2; i+=2)
+    for (unsigned long i = s_indexOfSeq+1; i < params.size()-2; i+=2)
     {
         seq.replace(atoi(params[i].c_str()),params[i+1][0]);
     }
@@ -76,7 +75,7 @@ inline std::string Replace::convertToName(const std::string &seq)
 {
     if (seq[0]==s_idSign)
     {
-        int id = atoi(cutSign(seq).c_str());
+        long id = strtol(cutSign(seq).c_str(), NULL,10);
         return DnaDataBase::findNameById(id);
     }
     return cutSign(seq);
