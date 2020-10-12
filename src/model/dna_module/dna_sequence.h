@@ -14,7 +14,7 @@ class DnaSequence{
 private:
 
     mutable size_t m_length_dna;
-    std::string    toStr()const;
+
     class Nucleotide{
 
     public:
@@ -48,7 +48,8 @@ public:
     bool                    compare(const DnaSequence& d) const;
     const Nucleotide&       operator[]( size_t index) const ;
     Nucleotide&             operator[]( size_t index);
-    DnaSequence             slice(int start,int end);//todo throw exeption if the indexes out of range
+    DnaSequence             slice(int start,int end);
+    void                    replace(int index, char letter);
     DnaSequence             pair() const ;
     int                     find(const DnaSequence d)const ;
     int                     count(const DnaSequence d)const ;
@@ -56,6 +57,7 @@ public:
     std::vector <int>       findConsensusSequences() const ;
     int                     input(const char* name_file);
     void                    output(IWriter*) const;
+    std::string             toStr()const;
 
 };
 

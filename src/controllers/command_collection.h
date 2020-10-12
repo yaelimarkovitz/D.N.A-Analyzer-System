@@ -14,7 +14,7 @@
 class CommandCollection {
 
 public:
-    typedef std::map<std::string ,SharedPointer<ICommand>>  CommandsMap;
+    typedef std::map<std::string ,SharedPointer<ICommand> >  CommandsMap;
 
     static ICommand*        getCmd(const std::string& name);
     static  CommandsMap     m_commandList;
@@ -55,6 +55,7 @@ inline CommandCollection::CommandsMap  CommandCollection::initMap()
     i["show"] = SharedPointer<Show>(new Show);
     i["list"] = SharedPointer<List>(new List);
     i["concat"] = SharedPointer<Concat>(new Concat);
+    i["replace"] = SharedPointer<Replace>(new Replace);
     return i;
 }
 #endif //UNTITLED_COMMAND_COLLECTION_H

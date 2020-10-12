@@ -23,6 +23,7 @@ CMakeFiles/src.dir/controllers/command_collection.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/new_cmd.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/pair.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/rename.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/replace.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/save.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/show.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/slice.h
@@ -54,6 +55,7 @@ CMakeFiles/src.dir/main.cpp.o
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/new_cmd.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/pair.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/rename.h
+ /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/replace.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/save.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/show.h
  /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/slice.h

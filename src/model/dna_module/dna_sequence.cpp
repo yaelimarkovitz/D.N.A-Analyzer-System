@@ -99,9 +99,25 @@ int DnaSequence::find(const DnaSequence d) const
     }
     return -1;
 }
-DnaSequence DnaSequence::slice(int start, int end) {
+
+void DnaSequence::replace(int index, char letter)
+{
+    if (index > m_length_dna)
+    {
+        throw TooLargIndex();
+    }
+    Nucleotide n(letter);
+    m_dna_seq[index] = n;
+}
+DnaSequence DnaSequence::slice(int start, int end)
+{
+    if(end > m_length_dna || start > m_length_dna)
+    {
+        throw TooLargIndex();
+    }
     std::string seq;
-    for (int i = start; i < end; ++i) {
+    for (int i = start; i < end; ++i)
+    {
         seq.push_back(m_dna_seq[i].getChar());
     }
     return DnaSequence(seq);

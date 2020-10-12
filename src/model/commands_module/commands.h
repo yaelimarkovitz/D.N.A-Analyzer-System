@@ -18,4 +18,5 @@
 #include "show.h"
 #include "list.h"
 #include "concat.h"
+#include "replace.h"
 #endif //UNTITLED_COMMANDS_H

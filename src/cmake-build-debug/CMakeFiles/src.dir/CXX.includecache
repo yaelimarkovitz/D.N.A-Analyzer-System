@@ -28,8 +28,6 @@ exception
 iostream
 -
 
-../myTools/readers/IReader.h
-
 ../myTools/readers/file_reader.h
 fstream
 -
@@ -39,8 +37,6 @@ string
 -
 IReader.h
 ../myTools/readers/IReader.h
-
-../myTools/writers/IWrither.h
 
 ../myTools/writers/file_writer.h
 iostream
@@ -61,10 +57,6 @@ vector
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
 ../myTools/too_little_params_exception.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/too_little_params_exception.h
-
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.cpp
-command_collection.h
-/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/controllers/command_collection.h
 map
@@ -127,6 +119,8 @@ list.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/list.h
 concat.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/concat.h
+replace.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/replace.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/concat.h
 ../controllers/ICommand.h
@@ -187,6 +181,12 @@ sstream
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/rename.h
 ../controllers/ICommand.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/controllers/ICommand.h
+
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/replace.h
+../controllers/ICommand.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/controllers/ICommand.h
+../dna_module/dna_data_base.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/save.h
 ../dna_module/dna_data_base.h
