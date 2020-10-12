@@ -53,7 +53,7 @@ SharedPointer<T>& SharedPointer<T>::operator=(const SharedPointer<U> &other)
     delete m_ptr;
     m_ptr = other.getPtr();
     (*m_count)--;
-    m_count= const_cast<size_t *>(other.getCount());
+    m_count= const_cast<size_t*>(other.getCount());
     (*m_count)++;
     return *this;
 }

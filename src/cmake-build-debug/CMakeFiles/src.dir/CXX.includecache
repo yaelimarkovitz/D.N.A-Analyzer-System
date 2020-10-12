@@ -18,6 +18,10 @@ vector
 ../myTools/too_little_params_exception.h
 ../myTools/too_little_params_exception.h
 
+../myTools/SharedPointer.h
+cstddef
+-
+
 ../myTools/not_found_exception.h
 exception
 -
@@ -206,6 +210,10 @@ cstdlib
 ../controllers/ICommand.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/controllers/ICommand.h
 ../dna_module/dna_data_base.h
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
+
+/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.cpp
+dna_data_base.h
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h
 
 /home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/dna_module/dna_data_base.h

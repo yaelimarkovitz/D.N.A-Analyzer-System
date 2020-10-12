@@ -14,7 +14,7 @@ class DnaSequence{
 private:
 
     mutable size_t m_length_dna;
-    std::string    toStr()const;
+
     class Nucleotide{
 
     public:
@@ -56,6 +56,7 @@ public:
     std::vector <int>       findConsensusSequences() const ;
     int                     input(const char* name_file);
     void                    output(IWriter*) const;
+    std::string             toStr()const;
 
 };
 

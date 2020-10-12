@@ -94,8 +94,10 @@ inline std::string DnaInfo::getInfoWithStatus(size_t numOfChars) //todo extract 
     std::ostringstream ss ;
     ss << m_id;
     std::string tmp;
+    puts("hi");
     for (unsigned int i = 0; i < m_dna.length(); ++i)
     {
+        puts("hi");
         if (i == numOfChars)
         {
             tmp.push_back('\n');
