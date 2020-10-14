@@ -9,6 +9,7 @@
 #include <sstream>
 #include "../myTools/writers/IWrither.h"
 #include "../myTools/readers/IReader.h"
+#include "../myTools/callback.h"
 #include "UI.h"
 
 class CommandLine : public UI{
@@ -16,13 +17,13 @@ class CommandLine : public UI{
 public:
 
     CommandLine(IWriter*, IReader*);
-    ~CommandLine();
 
     typedef std::vector <std::string> ParamsList;
 
-    void            run(callBack exeFunc);
+    void            run(callBack exeFunc) override;
     void            printStartMessage() const;
-    ParamsList      parseCommand(const std::string& str);
+    static ParamsList      parseCommand(const std::string& str);
+    char            confirmCallBack(const std::string&);
 
 private:
 
@@ -34,16 +35,17 @@ private:
 inline CommandLine::CommandLine(IWriter * write, IReader * read):m_writer(write),m_reader(read)
 {}
 
-inline CommandLine::~CommandLine()
-{}
-
 inline void CommandLine::run(callBack exeFunc)
 {
+
+//    CharCBString<CommandLine*> confirmFunctor(this,  &CommandLine::confirmCallBack);
+
     printStartMessage();
     std::string command;
 
     while (true)
     {
+        m_writer->write("> cmd >>>");
         command = m_reader->read();
 
         if (command.empty())
@@ -74,7 +76,7 @@ inline CommandLine::ParamsList CommandLine::parseCommand(const std::string &str)
     std::string cuter;
     while(getline(my,cuter,' '))
     {
-        params.push_back(cuter.c_str());
+        params.push_back(cuter);
     }
     return params;
 }
@@ -88,5 +90,13 @@ inline void CommandLine::printStartMessage() const
                     "3 . To shut down the system use the command quit\n"
                     "4. To get all the commands type help\n"
                     "Good Luck:)");
+}
+
+inline char CommandLine::confirmCallBack(const std::string &message)
+{
+    m_writer->write("> confirm >>>");
+    m_writer->write(message);
+    std::string answer = m_reader->read();
+    return answer[0];
 }
 #endif //UNTITLED_ICOMMANDLINE_H

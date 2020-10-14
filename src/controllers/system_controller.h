@@ -13,6 +13,7 @@
 #include "command_collection.h"
 #include "../myTools/writers/IWrither.h"
 #include "../myTools/readers/IReader.h"
+#include "../myTools/callback.h"
 
 
 
@@ -20,19 +21,20 @@ class SystemController {
 
 public:
 
-    typedef std::string (*callBack)(std::string,std::vector<std::string>);
+    typedef std::string (*callBack)(const std::string&,std::vector<std::string>);
 
-    SystemController(UI * userView);
+    explicit SystemController(UI * userView);
     ~SystemController();
 
-    void initSystem();
+    static void initSystem();
     void run();
-    void quitSystem();
+    static void quitSystem();
 
 private:
 
     UI * m_userView;
-    static std::string makeCallBack(std::string, std::vector<std::string>);
+    static std::string makeCallBack(const std::string&, std::vector<std::string> );
+
 };
 
 inline SystemController::SystemController( UI * userView):m_userView(userView)
@@ -61,8 +63,9 @@ inline void SystemController::quitSystem()
     printf("finish system\n");
 }
 
-inline std::string SystemController::makeCallBack(std::string command, std::vector<std::string> params)
+inline std::string SystemController::makeCallBack(const std::string& command, std::vector<std::string> params)
 {
     return CommandCollection::getCmd(command)->execute(params);
 }
+
 #endif //DNA_PROJECT_SYSTEM_CONTROLLER_H

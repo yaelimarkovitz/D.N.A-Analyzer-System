@@ -6,9 +6,10 @@
 #define UNTITLED_UI_H
 
 #include <vector>
+#include "../myTools/callback.h"
 
 struct UI{
-    typedef std::string (*callBack)(std::string,std::vector<std::string>);
+    typedef std::string (*callBack)(const std::string&,std::vector<std::string>);
     virtual ~UI(){};
     virtual void run (callBack c) = 0;
 };

@@ -122,6 +122,9 @@
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/count.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/del.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/dup.h">
 			<Option target="src"/>
 		</Unit>
@@ -147,6 +150,9 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/pair.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/reenum.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/model/commands_module/rename.h">
@@ -186,6 +192,9 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/SharedPointer.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/callback.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="/home/mby/Documents/new_dna_project/dna-analyzer-project-y-c-mby/src/myTools/not_found_command.h">

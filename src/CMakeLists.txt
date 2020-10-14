@@ -52,4 +52,4 @@ add_executable(src
         myTools/too_little_params_exception.h
         view/Icommand_line.h
         view/UI.h
-        main.cpp)
+        main.cpp model/commands_module/del.h model/commands_module/reenum.h myTools/callback.h)

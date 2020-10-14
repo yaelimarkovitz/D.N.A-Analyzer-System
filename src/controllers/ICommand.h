@@ -11,6 +11,7 @@
 #include "../model/dna_module/dna_data_base.h"
 #include "../myTools/too_little_params_exception.h"
 
+
 struct ICommand{
 
     virtual ~ICommand(){};

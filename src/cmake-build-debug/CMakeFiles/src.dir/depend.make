@@ -63,6 +63,7 @@ CMakeFiles/src.dir/main.cpp.o: ../model/dna_module/dna_info.h
 CMakeFiles/src.dir/main.cpp.o: ../model/dna_module/dna_sequence.h
 CMakeFiles/src.dir/main.cpp.o: ../model/dna_module/my_exception.h
 CMakeFiles/src.dir/main.cpp.o: ../myTools/SharedPointer.h
+CMakeFiles/src.dir/main.cpp.o: ../myTools/callback.h
 CMakeFiles/src.dir/main.cpp.o: ../myTools/not_found_command.h
 CMakeFiles/src.dir/main.cpp.o: ../myTools/readers/IReader.h
 CMakeFiles/src.dir/main.cpp.o: ../myTools/readers/console_reader.h
